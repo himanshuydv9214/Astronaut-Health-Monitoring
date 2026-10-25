@@ -17,13 +17,11 @@ Limitation to investigate: Health information is gathered through multiple devic
 
 2. Crew Active Dosimeter (CAD)
 NASA introduced crew active dosimetry for ISS missions in 2020. These compact instruments measure and log an individual astronaut's radiation exposure over time.
-
 Unlike passive dosimeters that are analyzed after the mission, active dosimeters provide time-resolved exposure measurements.
 
 Limitation to investigate: Measuring radiation exposure is not the same as measuring the resulting biological damage. Our software could explore how exposure data should be combined with other health information.
 
 3. Radiation Assessment Detector (RAD)
-
 RAD is a radiation instrument installed aboard the ISS that measures characteristics of the radiation environment. Its functions include alerting the crew when detected dose rates exceed relevant thresholds and helping ground teams understand exposure trends.
 
 Limitation to investigate: An environmental radiation measurement cannot, by itself, establish the exact dose absorbed by every astronaut's organs or predict an individual's future illness.
@@ -31,13 +29,12 @@ Limitation to investigate: An environmental radiation measurement cannot, by its
 
 
 4. Tissue-Equivalent Proportional Counter (TEPC)
-
-TEPC instruments measure radiation quantities relevant to biological tissue, including dose and radiation quality. NASA uses such measurements to characterize the radiation environment and support risk assessment.
+TEPC instruments measure radiation quantities relevant to biological tissue, including dose and radiation quality. 
+NASA uses such measurements to characterize the radiation environment and support risk assessment.
 
 Limitation to investigate: Radiation quality and biological effectiveness are complex. Two exposures with similar absorbed doses can have different biological consequences.
 
 5. Bio-Monitor
-
 The Canadian Space Agency's wearable system combines a smart shirt, headband and tablet application to collect physiological data. It was designed to reduce the burden of using multiple separate devices during astronaut health experiments.
 
 Limitation to investigate: Wearable sensors still need to balance measurement accuracy, comfort, reliable operation and the amount of time astronauts spend wearing them.
@@ -47,17 +44,11 @@ Limitation to investigate: Wearable sensors still need to balance measurement ac
 2. Limitations of Existing Health-Monitoring Systems
 Problem	Explanation
 Fragmented data: Medical, physiological and radiation data may be collected through different systems.
-
 Periodic measurements: Some health assessments occur at scheduled intervals rather than continuously.
-
 Exposure vs. biological damage:	Radiation instruments measure exposure, not all resulting biological damage.
-
 Communication delays: Deep-space missions may experience delays in communication with Earth.
-
 Limited resources: Spacecraft have constraints on power, storage, equipment and crew time.
-
 Uncertain predictions: Individual responses to radiation vary, and long-term risks are not always predictable precisely.
-
 Potential improvement: Develop software that integrates available data, tracks changes and supports medical decision-making.
 
 
