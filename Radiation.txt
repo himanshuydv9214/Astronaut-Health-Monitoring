@@ -1,0 +1,67 @@
+RADIATION-Health consequences following radiation are very complex processes, it is difficult to quantify that how the radiation is actually interacting with tissue and what long term outcome is gonna be.
+
+Primary way by which radiation affects human body is by damaging our DNA(break in strands).cells will work to repair that damage, sometimes it is effective, sometimes it is now, sometimes it will get repaired but in an improper way(mis repaired),anything that sets to genome(complete set of genetic instructions made of DNA required to build ,grow ,develop ,and maintain an organism)in that way is a mutation and accumulation of mutation can potentially lead to cancer(radiation transforms non cancerous cells to cancerous ones).
+
+On Earth we have low LET(Linear Energy Transfer)radiation, average amount of energy an ionizing particle transfers to a material or tissue it passes per unit distance, we also have earths magnetic field that protects us from incoming radiation.
+We can't reduce the distance to mars but we can get their faster in time.
+
+
+ What health-monitoring systems are currently used on the ISS?
+
+1. Crew Health Care System (CHeCS)
+Core medical system
+CHeCS is an umbrella system for medical equipment, environmental health monitoring and exercise countermeasures. Astronauts use equipment such as ECG devices, blood-pressure monitors, ultrasound equipment and diagnostic tools.
+
+Limitation to investigate: Health information is gathered through multiple devices and scheduled examinations, rather than relying on one continuously operating sensor for every health parameter.
+
+
+2. Crew Active Dosimeter (CAD)
+NASA introduced crew active dosimetry for ISS missions in 2020. These compact instruments measure and log an individual astronaut's radiation exposure over time.
+
+Unlike passive dosimeters that are analyzed after the mission, active dosimeters provide time-resolved exposure measurements.
+
+Limitation to investigate: Measuring radiation exposure is not the same as measuring the resulting biological damage. Our software could explore how exposure data should be combined with other health information.
+
+3. Radiation Assessment Detector (RAD)
+
+RAD is a radiation instrument installed aboard the ISS that measures characteristics of the radiation environment. Its functions include alerting the crew when detected dose rates exceed relevant thresholds and helping ground teams understand exposure trends.
+
+Limitation to investigate: An environmental radiation measurement cannot, by itself, establish the exact dose absorbed by every astronaut's organs or predict an individual's future illness.
+
+
+
+4. Tissue-Equivalent Proportional Counter (TEPC)
+
+TEPC instruments measure radiation quantities relevant to biological tissue, including dose and radiation quality. NASA uses such measurements to characterize the radiation environment and support risk assessment.
+
+Limitation to investigate: Radiation quality and biological effectiveness are complex. Two exposures with similar absorbed doses can have different biological consequences.
+
+5. Bio-Monitor
+
+The Canadian Space Agency's wearable system combines a smart shirt, headband and tablet application to collect physiological data. It was designed to reduce the burden of using multiple separate devices during astronaut health experiments.
+
+Limitation to investigate: Wearable sensors still need to balance measurement accuracy, comfort, reliable operation and the amount of time astronauts spend wearing them.
+
+
+
+2. Limitations of Existing Health-Monitoring Systems
+Problem	Explanation
+Fragmented data: Medical, physiological and radiation data may be collected through different systems.
+
+Periodic measurements: Some health assessments occur at scheduled intervals rather than continuously.
+
+Exposure vs. biological damage:	Radiation instruments measure exposure, not all resulting biological damage.
+
+Communication delays: Deep-space missions may experience delays in communication with Earth.
+
+Limited resources: Spacecraft have constraints on power, storage, equipment and crew time.
+
+Uncertain predictions: Individual responses to radiation vary, and long-term risks are not always predictable precisely.
+
+Potential improvement: Develop software that integrates available data, tracks changes and supports medical decision-making.
+
+
+OUR GOAL:Our goal is to develop an integrated astronaut health-monitoring software that combines radiation exposure data with physiological and medical health information. The system will analyze how radiation exposure may be associated with changes in different aspects of an astronaut’s health. It will monitor health trends, identify unusual patterns, and provide early warnings when potential concerns arise. Using scientifically validated risk models, it will estimate possible long-term health risks, such as cancer, cardiovascular diseases, and cataracts. The software will also communicate predictions, assumptions, and uncertainties clearly to support informed medical decisions. Ultimately, we aim to improve astronaut health monitoring and support safer long-duration space missions.
+
+Remember: Two Astronauts that are being exposed to same level of radiation can have completely different aftermath in their body due to differences in their normal body conditions when they were not exposed to radiation.
+ 
