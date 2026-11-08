@@ -1,0 +1,61 @@
+NASA Space Apps Hackathon 2026
+Cardiovascular Health Monitoring in Space
+
+Project Overview
+
+Space missions can have a significant impact on astronauts' health, especially during long periods in microgravity. One of the major concerns is cardiovascular health, as the absence of normal gravity affects blood circulation, heart function, and blood pressure regulation.
+
+This project focuses on developing a cardiovascular health monitoring system that can track important health parameters, analyze changes, and identify possible risks during space missions.
+The aim is to use data analysis and machine learning to support early detection of cardiovascular abnormalities and improve astronaut safety.
+
+Problem Statement
+
+In space, microgravity causes body fluids to shift toward the upper body, affecting normal blood circulation. Over time, this can lead to cardiovascular deconditioning, changes in blood pressure, and difficulties in maintaining normal circulation when astronauts return to Earth.
+
+Some of the major cardiovascular concerns include:
+
+- Changes in heart rate and blood pressure
+- Fluid shifts affecting blood circulation
+- Reduced cardiovascular fitness over time
+- Possible irregular heart rhythms
+- Difficulty adjusting to Earth's gravity after long missions
+Since immediate medical assistance may be limited during space missions, monitoring these changes and identifying potential risks early is important.
+
+Proposed Solution
+
+Our project proposes a system that monitors astronauts' cardiovascular health using physiological data.
+The system will focus on four main cardiovascular parameters:
+
+- Heart Rate (HR): Monitors heartbeat patterns and detects unusually high or low heart rates.
+- Heart Rate Variability (HRV): Measures variations between heartbeats to understand cardiovascular regulation and stress.
+- Blood Pressure (BP): Tracks blood pressure changes that may indicate circulation-related problems.
+- Electrocardiogram (ECG): Records the heart's electrical activity to help identify irregular heart rhythms.
+The collected data will be processed and analyzed to identify unusual patterns. Machine learning techniques may be used to detect potential cardiovascular risks and generate alerts when significant abnormalities are observed.
+
+The system will also include a simple dashboard to display health parameters, trends, and warning notifications.
+How It Works
+
+1. Data Collection: Gather cardiovascular data from available datasets or simulated readings.
+2. Data Preprocessing: Clean and organize the data for analysis.
+3. Data Analysis: Monitor changes in cardiovascular parameters and identify patterns.
+4. Risk Detection: Use machine learning or data-based methods to detect unusual readings.
+5. Alerts and Visualization: Display the results on a dashboard and generate alerts for potential risks.
+
+Expected Outcome
+The expected outcome is a working prototype that can monitor cardiovascular parameters and identify possible abnormalities using physiological data.
+
+The system aims to:
+- Track cardiovascular changes over time.
+- Detect unusual heart rate, blood pressure, and ECG patterns.
+- Provide early warnings for potential health risks.
+- Present health information through a simple dashboard.
+- Support better understanding of cardiovascular changes during space missions.
+
+Future Scope
+In the future, the system could be improved by integrating real-time data from wearable sensors, using more advanced machine learning models, and testing with actual astronaut health datasets.
+It could also be extended to monitor other health conditions and support remote healthcare applications.
+
+Conclusion
+
+Cardiovascular health is an important concern during long-duration space missions. Monitoring changes in heart function and blood circulation can help identify potential health risks and support astronaut safety.
+Through this project, we aim to explore how data analysis and machine learning can be used to develop a simple and effective cardiovascular monitoring system for space environments.
