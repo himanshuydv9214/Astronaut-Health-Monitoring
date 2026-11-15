@@ -1,0 +1,10 @@
+﻿.venv\Scripts\python.exe : 218 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.10
+At line:1 char:543
++ ... ist\ARES }; .venv\Scripts\python.exe -m PyInstaller --noconfirm --cle ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (218 INFO: PyIns... hooks: 2026.10:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+218 INFO: Python: 3.13.17
+260 INFO: Platform: Windows-11-10.0.26200-SP0
+260 INFO: Python environment: C:\Users\Himanshu\Downloads\ARES-NASA-SpaceApps-2026\ARES\.venv
