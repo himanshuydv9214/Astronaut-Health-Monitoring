@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARES — Autonomous Risk Evaluation & Emergency Support</title>
+<link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%233987e5'/></svg>">
+<script src="/vendor/plotly.min.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">ARES</div>
+    <div class="tag">Autonomous Risk Evaluation &amp; Emergency Support<span>Keeping Humanity Alive Beyond Earth</span></div>
+  </div>
+  <div class="mission-strip" id="missionStrip"></div>
+  <div class="sim-badge" title="All crew physiology in this demo is simulated">SIMULATED DATA · RESEARCH PROTOTYPE</div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="overview" class="active">Mission Overview</button>
+  <button data-tab="twin">Astronaut Digital Twin</button>
+  <button data-tab="ai">AI Intelligence Center</button>
+  <button data-tab="emergency">Emergency Command <span id="incBadge" class="count"></span></button>
+  <button data-tab="behavioral">Behavioral &amp; Clinical <span class="private">private</span></button>
+  <button data-tab="sim">Mission Simulation</button>
+  <a class="twin3d-link" href="/twin/" title="Interactive 3D anatomical digital twin">3D Body Twin &#8599;</a>
+  <div class="spacer"></div>
+  <label class="crew-select">Astronaut <select id="crewSelect"></select></label>
+</nav>
+
+<main>
+  <!-- ======================= OVERVIEW -->
+  <section id="tab-overview" class="tab active">
+    <div class="grid crew" id="crewCards"></div>
+    <div class="grid three">
+      <div class="panel">
+        <h3>Active incidents</h3>
+        <div id="ovIncidents" class="list"></div>
+      </div>
+      <div class="panel">
+        <h3>Earth communication</h3>
+        <div id="ovComms"></div>
+      </div>
+      <div class="panel">
+        <h3>Cabin environment</h3>
+        <div id="ovCabin"></div>
+      </div>
+    </div>
+    <div class="grid three">
+      <div class="panel">
+        <h3>Radiation exposure <span class="hint">measured · modelled · inferred kept separate</span></h3>
+        <div id="ovRad"></div>
+      </div>
+      <div class="panel">
+        <h3>Trajectory <span class="hint">Hohmann transfer, first-order</span></h3>
+        <div id="trajPlot" class="plot sm"></div>
+      </div>
+      <div class="panel">
+        <h3>Event log</h3>
+        <div id="ovLog" class="list log"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DIGITAL TWIN -->
+  <section id="tab-twin" class="tab">
+    <div class="twin-head panel" id="twinHead"></div>
+    <div class="grid vitals" id="vitalPlots"></div>
+    <div class="grid two">
+      <div class="panel">
+        <h3>Live ECG <span class="hint" id="ecgHint"></span></h3>
+        <div id="ecgPlot" class="plot sm"></div>
+      </div>
+      <div class="panel">
+        <h3>Personal baselines (current context) <span class="hint">Bayesian, context-conditioned</span></h3>
+        <table class="tbl" id="baselineTbl"></table>
+      </div>
+    </div>
+    <div class="grid two">
+      <div class="panel">
+        <h3>Longitudinal (daily resting means) &amp; drift from mission reference</h3>
+        <table class="tbl" id="longTbl"></table>
+      </div>
+      <div class="panel">
+        <h3>Health timeline</h3>
+        <div id="timeline" class="list log"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= AI CENTER -->
+  <section id="tab-ai" class="tab">
+    <div class="grid two">
+      <div class="panel">
+        <h3>Anomaly score &amp; 30-min risk forecast <span class="hint">simulation-trained · not a medical probability</span></h3>
+        <div id="mlPlot" class="plot"></div>
+      </div>
+      <div class="panel">
+        <h3>Why: explanation of the current state</h3>
+        <div id="aiExplain"></div>
+      </div>
+    </div>
+    <div class="grid three">
+      <div class="panel">
+        <h3>Forecaster attributions (SHAP)</h3>
+        <div id="shapPlot" class="plot sm"></div>
+      </div>
+      <div class="panel">
+        <h3>Physiological correlations (60 min)</h3>
+        <div id="corrPlot" class="plot sm"></div>
+        <div id="patterns"></div>
+      </div>
+      <div class="panel">
+        <h3>Model health &amp; integrity</h3>
+        <div id="sysHealth"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EMERGENCY -->
+  <section id="tab-emergency" class="tab">
+    <div class="grid emerg">
+      <div class="panel">
+        <h3>Incidents</h3>
+        <div id="incList" class="list"></div>
+      </div>
+      <div class="panel" id="reportPanel">
+        <h3>Explainable emergency report</h3>
+        <div id="report"><p class="muted">Select an incident.</p></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Earth communication queue <span class="hint">store-and-forward, priority ordered, nothing dropped in blackout</span></h3>
+      <table class="tbl" id="commTbl"></table>
+    </div>
+  </section>
+
+  <!-- ======================= BEHAVIORAL & CLINICAL -->
+  <section id="tab-behavioral" class="tab">
+    <div class="privacy-note">Private channel — visible to the astronaut and the Crew Medical Officer only. Earth receives the readiness category only.</div>
+    <div class="grid two">
+      <div class="panel">
+        <h3>Behavioral &amp; cognitive readiness</h3>
+        <div id="behStatus"></div>
+        <div id="behPlot" class="plot sm"></div>
+      </div>
+      <div class="panel">
+        <h3>PVT-B vigilance test <span class="hint">3-min psychomotor vigilance test as used on ISS</span></h3>
+        <div id="pvtBox" class="pvt-box" tabindex="0">
+          <div id="pvtText">Press <b>Start</b>. When the counter appears, press <kbd>Space</kbd> or click as fast as you can.</div>
+        </div>
+        <div class="row">
+          <button id="pvtStart" class="btn primary">Start 3-min PVT-B</button>
+          <button id="pvtShort" class="btn">Start 90-s demo</button>
+          <span id="pvtInfo" class="muted"></span>
+        </div>
+      </div>
+    </div>
+    <div class="grid two">
+      <div class="panel">
+        <h3>Daily check-in</h3>
+        <form id="checkinForm" class="form">
+          <label>Fatigue (Samn-Perelli 1-7)<input type="range" name="samn_perelli" min="1" max="7" value="2"><output>2</output></label>
+          <label>Mood (0-10)<input type="range" name="mood" min="0" max="10" value="7"><output>7</output></label>
+          <label>Stress (0-10)<input type="range" name="stress" min="0" max="10" value="3"><output>3</output></label>
+          <label>Workload (0-10)<input type="range" name="workload" min="0" max="10" value="5"><output>5</output></label>
+          <label>Sleep quality (0-10)<input type="range" name="sleep_quality" min="0" max="10" value="7"><output>7</output></label>
+          <button class="btn primary" type="submit">Submit check-in</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h3>Symptoms &amp; lab results <span class="hint">immune markers need lab analysis — compared to own pre-flight values</span></h3>
+        <div id="symptomBox" class="chips"></div>
+        <div class="row"><button id="symSubmit" class="btn">Report selected symptoms</button></div>
+        <form id="labForm" class="form labs"></form>
+        <div id="labStatus"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SIMULATION -->
+  <section id="tab-sim" class="tab">
+    <div class="grid emerg">
+      <div class="panel">
+        <h3>Scenario library <span class="hint">click a card to inject it into the running mission</span></h3>
+        <div class="target-line">Target astronaut: <b id="scenTarget">—</b> <span class="muted">(change with the Astronaut selector, top right · CO₂ and radiation affect the whole crew)</span></div>
+        <div id="scenarioGrid" class="scen-grid"></div>
+        <div class="row"><button id="clearScen" class="btn">Clear all scenarios</button><span id="activeScen" class="muted"></span></div>
+      </div>
+      <div class="panel">
+        <h3>Mission controls</h3>
+        <div class="ctrl">
+          <div class="ctrl-row"><span>Communication</span>
+            <div class="seg" id="commSeg">
+              <button data-mode="">Auto</button><button data-mode="connected">Connected</button>
+              <button data-mode="delay">Delay</button><button data-mode="blackout">Blackout</button>
+            </div></div>
+          <div class="ctrl-row"><span>Simulation speed</span>
+            <input type="range" id="speed" min="0" max="30" step="1" value="2"><output id="speedOut">2 min/s</output>
+            <button id="pauseBtn" class="btn">Pause</button></div>
+          <div class="ctrl-row"><span>Crew storm shelter</span><button id="shelterBtn" class="btn">Enter shelter</button></div>
+          <div class="ctrl-row"><span>Jump to mission day</span><input type="number" id="dayInput" min="0" max="900" value="200"><button id="dayBtn" class="btn">Set</button></div>
+        </div>
+        <h3 class="mt">Onboard knowledge assistant <span class="hint">retrieval only — never generates medical instructions</span></h3>
+        <div id="chat" class="chat"></div>
+        <form id="askForm" class="ask"><input id="askInput" placeholder="e.g. Why is Tanaka flagged?  ·  What oxygen supplies do we have?  ·  Radiation dose?" autocomplete="off"><button class="btn primary">Ask</button></form>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<footer id="footer"></footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
