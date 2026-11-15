@@ -1,0 +1,81 @@
+{
+  "mitbih": {
+    "record": "mitdb/100",
+    "fs": 360,
+    "duration_min": 30.1,
+    "reference_beats": 2273,
+    "detected": 2264,
+    "sensitivity": 0.996,
+    "ppv": 1.0,
+    "hr_mae_bpm": 0.09,
+    "hr_bias_bpm": -0.0,
+    "hr_p95_abs_err_bpm": 0.29,
+    "rmssd_mae_ms": 3.13,
+    "rmssd_median_ref_ms": 26.9,
+    "median_sqi": 1.0,
+    "windows": 180,
+    "note": "Record 100 is mostly normal sinus rhythm with 33 APCs and 1 PVC.",
+    "noise_robustness": [
+      {
+        "snr_db": 20,
+        "median_sqi": 1.0,
+        "pct_windows_trusted": 100.0,
+        "hr_err_gt10bpm_pct_all": 0.0,
+        "hr_err_gt10bpm_pct_trusted": 0.0
+      },
+      {
+        "snr_db": 12,
+        "median_sqi": 1.0,
+        "pct_windows_trusted": 100.0,
+        "hr_err_gt10bpm_pct_all": 0.0,
+        "hr_err_gt10bpm_pct_trusted": 0.0
+      },
+      {
+        "snr_db": 9,
+        "median_sqi": 1.0,
+        "pct_windows_trusted": 100.0,
+        "hr_err_gt10bpm_pct_all": 0.0,
+        "hr_err_gt10bpm_pct_trusted": 0.0
+      },
+      {
+        "snr_db": 6,
+        "median_sqi": 0.99,
+        "pct_windows_trusted": 100.0,
+        "hr_err_gt10bpm_pct_all": 0.0,
+        "hr_err_gt10bpm_pct_trusted": 0.0
+      },
+      {
+        "snr_db": 3,
+        "median_sqi": 0.933,
+        "pct_windows_trusted": 100.0,
+        "hr_err_gt10bpm_pct_all": 0.0,
+        "hr_err_gt10bpm_pct_trusted": 0.0
+      },
+      {
+        "snr_db": 0,
+        "median_sqi": 0.823,
+        "pct_windows_trusted": 96.7,
+        "hr_err_gt10bpm_pct_all": 10.0,
+        "hr_err_gt10bpm_pct_trusted": 10.3
+      },
+      {
+        "snr_db": -3,
+        "median_sqi": 0.575,
+        "pct_windows_trusted": 26.7,
+        "hr_err_gt10bpm_pct_all": 56.7,
+        "hr_err_gt10bpm_pct_trusted": 25.0
+      }
+    ]
+  },
+  "drivedb": {
+    "record": "drivedb/drive02",
+    "fs_ecg": 496.0,
+    "duration_min": 83.9,
+    "windows": 503,
+    "pct_windows_trusted_sqi": 99.8,
+    "mae_vs_device_hr_all_bpm": 2.71,
+    "mae_vs_device_hr_trusted_bpm": 2.7,
+    "within_5bpm_trusted_pct": 90.0,
+    "note": "Device HR is itself an estimate (not a gold standard); agreement, not accuracy, is measured."
+  }
+}

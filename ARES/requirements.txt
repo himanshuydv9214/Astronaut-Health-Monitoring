@@ -1,0 +1,20 @@
+# Core (tested with Python 3.11-3.13)
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+scikit-learn>=1.4
+joblib>=1.3
+shap>=0.45
+pyarrow>=14            # parquet datasets
+# API + dashboard
+fastapi>=0.110
+uvicorn>=0.27
+websockets>=12          # live push channel for the 3D twin
+pydantic>=2.5
+plotly>=5.18           # plotly.min.js is served locally (offline dashboard)
+# Real-data validation + reports
+wfdb>=4.1              # PhysioNet WFDB format reader
+matplotlib>=3.8
+# Tests
+pytest>=8
+httpx>=0.27            # FastAPI TestClient

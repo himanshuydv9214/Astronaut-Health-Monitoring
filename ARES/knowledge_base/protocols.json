@@ -1,0 +1,334 @@
+{
+ "_meta": {
+  "status": "DEMO - NOT APPROVED FOR CLINICAL OR OPERATIONAL USE",
+  "purpose": "Structure and traceability demonstration for ARES protocol retrieval. Real flight medical procedures (e.g., ISS medical checklists) are controlled documents and are not public. In a real system every entry below would be replaced by flight-surgeon-approved procedures with document IDs, revisions and sign-off.",
+  "policy": "ARES only RETRIEVES and DISPLAYS entries from this file verbatim. It never generates, edits or combines medical instructions.",
+  "version": "0.1-demo",
+  "last_reviewed": "2026-11-13 (prototype, no clinical review)"
+ },
+ "protocols": [
+  {
+   "id": "GEN-01",
+   "title": "Verify an abnormal reading before acting",
+   "categories": [
+    "any",
+    "sensor_fault"
+   ],
+   "triggers": "abnormal reading sensor check verify re-measure artifact flatline lead off probe contact",
+   "assessment_steps": [
+    "Ask the crew member how they feel; note any symptoms.",
+    "Check sensor placement and contact (oximeter probe, ECG electrodes, belt).",
+    "Re-measure with the redundant/backup device where available.",
+    "Compare with the crew member's personal baseline shown by ARES."
+   ],
+   "escalation_criteria": "Escalate per the relevant protocol if the abnormal value is confirmed on a second device or symptoms are present.",
+   "equipment": [
+    "Backup pulse oximeter",
+    "Spare ECG electrodes",
+    "Manual BP cuff"
+   ],
+   "additional_measurements": [
+    "Repeat measurement on backup device",
+    "Manual pulse count (60 s)"
+   ],
+   "source": {
+    "title": "ARES design principle: sensor-failure-safe escalation (this project)",
+    "url": null,
+    "type": "project"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "RESP-01",
+   "title": "Low oxygen saturation - initial assessment",
+   "categories": [
+    "hypoxaemia",
+    "respiratory",
+    "spo2"
+   ],
+   "triggers": "low spo2 desaturation hypoxaemia oxygen saturation shortness of breath breathing difficulty",
+   "assessment_steps": [
+    "Confirm the reading (GEN-01): reposition probe, check perfusion, use backup oximeter.",
+    "Check cabin atmosphere telemetry (ppO2, ppCO2) - an environmental cause affects the whole crew.",
+    "Assess breathing rate, effort, and level of alertness.",
+    "Notify the Crew Medical Officer (CMO) immediately.",
+    "Prepare onboard oxygen equipment per the vehicle's APPROVED procedure; administration only per CMO/flight-surgeon protocol."
+   ],
+   "escalation_criteria": "Critical: SpO2 persistently below the critical limit, altered alertness, or worsening despite approved interventions.",
+   "equipment": [
+    "Pulse oximeter (x2)",
+    "Onboard oxygen supply",
+    "Stethoscope"
+   ],
+   "additional_measurements": [
+    "Cabin ppO2 / ppCO2 telemetry",
+    "Respiratory rate (manual count)",
+    "Level of consciousness (AVPU)"
+   ],
+   "source": {
+    "title": "O'Driscoll BR et al. BTS guideline for oxygen use in adults in healthcare and emergency settings. Thorax 2017;72(Suppl 1)",
+    "url": null,
+    "type": "peer-reviewed guideline (terrestrial)"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "CARD-01",
+   "title": "Irregular or fast heart rhythm - initial assessment",
+   "categories": [
+    "arrhythmia",
+    "cardiovascular",
+    "hr"
+   ],
+   "triggers": "arrhythmia irregular rhythm tachycardia palpitations atrial fibrillation fast heart rate ecg abnormal",
+   "assessment_steps": [
+    "Confirm with a manual pulse check and the ECG trace (rule out lead artefact).",
+    "Record a longer, multi-lead ECG if the equipment allows.",
+    "Ask about symptoms: palpitations, chest pain, dizziness, breathlessness.",
+    "Measure blood pressure now (do not wait for the scheduled cuff cycle).",
+    "Notify the CMO; queue the ECG strip for flight-surgeon review."
+   ],
+   "escalation_criteria": "Critical: chest pain, fainting, low blood pressure, or heart rate beyond the critical limit at rest.",
+   "equipment": [
+    "ECG monitor",
+    "BP cuff",
+    "Defibrillator/AED (location check)"
+   ],
+   "additional_measurements": [
+    "Multi-lead ECG recording",
+    "Immediate BP",
+    "Symptom report"
+   ],
+   "source": {
+    "title": "Generic first-response assessment structure (placeholder for flight-surgeon procedure)",
+    "url": null,
+    "type": "placeholder"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "INF-01",
+   "title": "Fever with raised heart/breathing rate - screening",
+   "categories": [
+    "febrile",
+    "temp"
+   ],
+   "triggers": "fever temperature infection sepsis febrile chills raised heart rate breathing",
+   "assessment_steps": [
+    "Confirm temperature with a second method.",
+    "Screen with qSOFA criteria: respiratory rate >= 22/min, systolic BP <= 100 mmHg, altered mentation.",
+    "Look for a source (respiratory, urinary, skin, wound) and ask about symptoms.",
+    "Isolate shared items if infection is suspected; notify the CMO.",
+    "Track trend every 15 min; ARES will show the rate of change."
+   ],
+   "escalation_criteria": "Medical assessment if qSOFA >= 2 or deterioration across multiple systems.",
+   "equipment": [
+    "Thermometer",
+    "BP cuff",
+    "Pulse oximeter",
+    "Medical kit diagnostics"
+   ],
+   "additional_measurements": [
+    "qSOFA components",
+    "Repeat temperature",
+    "Fluid intake/output"
+   ],
+   "source": {
+    "title": "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA 2016;315(8):801-810",
+    "url": null,
+    "type": "peer-reviewed consensus (terrestrial)"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "FLUID-01",
+   "title": "Suspected fluid deficit (dehydration) - assessment",
+   "categories": [
+    "hypovolaemia",
+    "dehydration",
+    "sbp"
+   ],
+   "triggers": "dehydration fluid loss low blood pressure tachycardia dizziness thirst urine",
+   "assessment_steps": [
+    "Review recent fluid intake, exercise load, vomiting or heat exposure.",
+    "Measure BP and heart rate now; repeat in 15 min.",
+    "Ask about dizziness, headache, thirst; check urine output/colour if logged.",
+    "Notify the CMO; follow the APPROVED fluid-replacement procedure only on CMO direction."
+   ],
+   "escalation_criteria": "Medical assessment if BP keeps falling, heart rate keeps rising, or symptoms appear.",
+   "equipment": [
+    "BP cuff",
+    "Fluid supplies"
+   ],
+   "additional_measurements": [
+    "Fluid intake log",
+    "Urine output",
+    "Repeat BP"
+   ],
+   "source": {
+    "title": "Generic assessment structure (placeholder for flight-surgeon procedure)",
+    "url": null,
+    "type": "placeholder"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "FAT-01",
+   "title": "Sleep debt and fatigue - countermeasure review",
+   "categories": [
+    "fatigue",
+    "sleep"
+   ],
+   "triggers": "fatigue sleep deprivation tired insomnia sleep debt low hrv workload",
+   "assessment_steps": [
+    "Review the crew member's sleep over the past 72 h (ARES timeline).",
+    "Review workload and schedule; consider protecting the next sleep period.",
+    "Check sleep environment: noise, light, temperature, CO2.",
+    "Avoid assigning safety-critical tasks during peak fatigue where the schedule allows; inform the Commander."
+   ],
+   "escalation_criteria": "Report to the flight surgeon at the next communication window if the trend persists > 3 days.",
+   "equipment": [
+    "Sleep station",
+    "Lighting controls"
+   ],
+   "additional_measurements": [
+    "Subjective sleepiness rating",
+    "Reaction-time test if available"
+   ],
+   "source": {
+    "title": "NASA Human Research Program: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization and work overload (HRP evidence report)",
+    "url": null,
+    "type": "NASA HRP"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "RAD-01",
+   "title": "Solar particle event - crew protection",
+   "categories": [
+    "spe",
+    "radiation"
+   ],
+   "triggers": "solar particle event radiation storm shelter dose spike sep proton flux",
+   "assessment_steps": [
+    "Move all crew to the designated storm shelter per the vehicle flight rule.",
+    "Confirm every crew member's dosimeter is worn and logging.",
+    "Suspend EVA and non-essential activity in lightly shielded areas.",
+    "Monitor dose rate; remain sheltered until the flight rule's all-clear criteria are met.",
+    "Log event dose per crew member against the 250 mSv SPE limit and the 600 mSv career limit."
+   ],
+   "escalation_criteria": "Report event dose to ground at the next window; acute symptoms (nausea, vomiting) require medical assessment.",
+   "equipment": [
+    "Storm shelter",
+    "Personal dosimeters"
+   ],
+   "additional_measurements": [
+    "Personal dosimeter readings",
+    "Symptom check"
+   ],
+   "source": {
+    "title": "NASA-STD-3001 Technical Brief OCHMO-TB-020: Design for Ionizing Radiation Protection",
+    "url": "https://www.nasa.gov/wp-content/uploads/2023/03/radiation-protection-technical-brief-ochmo.pdf",
+    "type": "NASA standard (technical brief)"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "ESC-01",
+   "title": "Critical emergency - crew response coordination",
+   "categories": [
+    "critical",
+    "any"
+   ],
+   "triggers": "critical emergency unresponsive collapse life threatening escalation all crew",
+   "assessment_steps": [
+    "Alert all crew; CMO leads, Commander coordinates.",
+    "Bring the medical kit and backup monitoring to the patient.",
+    "Follow the specific approved procedure for the suspected problem.",
+    "Send a P1 message to ground immediately - but act locally: ground cannot respond before the round-trip delay shown by ARES."
+   ],
+   "escalation_criteria": "Continuous monitoring until resolved.",
+   "equipment": [
+    "Medical kit",
+    "Backup monitors",
+    "AED"
+   ],
+   "additional_measurements": [
+    "Continuous vitals",
+    "Level of consciousness"
+   ],
+   "source": {
+    "title": "ARES design principle: mission-aware autonomy (this project)",
+    "url": null,
+    "type": "project"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "ENV-01",
+   "title": "Elevated cabin CO2 - crew and vehicle response",
+   "categories": [
+    "environmental",
+    "co2"
+   ],
+   "triggers": "cabin ppCO2 1-hour average above 3 mmHg; several crew breathing faster at the same time; headaches",
+   "assessment_steps": [
+    "Confirm the reading with a second (portable) CO2 monitor before acting on it.",
+    "Check CO2-removal system status and cabin ventilation fans; report to the vehicle systems lead.",
+    "Move crew away from poorly ventilated areas (microgravity allows local CO2 pockets).",
+    "Reduce or postpone exercise to lower metabolic CO2 output until levels fall.",
+    "Ask each crew member about headache, fatigue or blurred vision and log the symptoms in ARES.",
+    "Re-check every 15 minutes until the 1-hour average is below 3 mmHg."
+   ],
+   "escalation_criteria": [
+    "ppCO2 keeps rising despite the steps above",
+    "any crew member with confusion, severe headache or shortness of breath -> treat as medical event (L2)"
+   ],
+   "equipment": [
+    "Portable CO2 monitor",
+    "Cabin ventilation"
+   ],
+   "additional_measurements": [
+    "Portable CO2 reading",
+    "Symptom check of all crew"
+   ],
+   "source": {
+    "title": "NASA-STD-3001 Technical Brief OCHMO-TB-004 Carbon Dioxide; NASA-STD-3001 Vol 2 [V2 6004]",
+    "url": "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-004-carbon-dioxide.pdf"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  },
+  {
+   "id": "BEH-01",
+   "title": "Behavioral readiness - support and countermeasure review",
+   "categories": [
+    "behavioral",
+    "fatigue",
+    "sleep"
+   ],
+   "triggers": "behavioral readiness Watch or Support suggested: vigilance decline, high fatigue, mood/stress change, sleep debt",
+   "assessment_steps": [
+    "Private conversation between the crew member and the CMO (results are not shared crew-wide).",
+    "Review the sleep schedule, light exposure and workload for the coming days; protect sleep opportunity.",
+    "Avoid scheduling safety-critical tasks for this crew member while vigilance is reduced, where possible.",
+    "Offer the agreed coping and relaxation resources; encourage contact with family when the link allows.",
+    "Request a private conference with the ground behavioral health team in the next communication window."
+   ],
+   "escalation_criteria": [
+    "Support suggested persisting > 3 days",
+    "crew member requests help",
+    "any concern for crew member safety -> CMO + commander immediately"
+   ],
+   "equipment": [],
+   "additional_measurements": [
+    "Repeat PVT-B next morning",
+    "Daily check-in"
+   ],
+   "source": {
+    "title": "NASA Human Research Program - Risk of Adverse Cognitive or Behavioral Conditions (behavioral health and performance)",
+    "url": "https://humanresearchroadmap.nasa.gov/"
+   },
+   "approval": "UNAPPROVED-DEMO"
+  }
+ ]
+}
