@@ -1,0 +1,6 @@
+/* Tailwind v4 without preflight: the ARES stylesheet owns the reset. It sits in the base layer,
+   so Tailwind utilities (used by components in src/components/ui) always win over its element rules. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./styles.css" layer(base);
