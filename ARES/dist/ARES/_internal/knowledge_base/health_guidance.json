@@ -1,0 +1,536 @@
+{
+  "_meta": {
+    "status": "DEMO - NOT APPROVED FOR CLINICAL OR OPERATIONAL USE",
+    "version": "0.2-demo",
+    "compiled": "2026-11-15 by the ARES team from the public NASA sources listed under 'sources'",
+    "policy": "Immediate actions are ONLY the protocol steps stored in protocols.json, shown verbatim. Long-term effects are limited to risks NASA itself lists, each labelled with its evidence level. ARES never generates treatments. A real system would replace this file with flight-surgeon-approved content.",
+    "evidence_levels": {
+      "established-spaceflight": "Recognised by NASA as a human-system risk of spaceflight",
+      "spaceflight-research": "Seen in NASA spaceflight research data (may be animal studies)",
+      "theoretical": "Plausible consequence reasoned by the ARES team; not established - for discussion with the medical officer"
+    }
+  },
+  "sources": {
+    "nasa_risks": {
+      "title": "NASA - Summary of Human Risks of Spaceflight (NTRS 20190033360)",
+      "url": "https://ntrs.nasa.gov/api/citations/20190033360/downloads/20190033360.pdf"
+    },
+    "hrp_2023": {
+      "title": "NASA Human Research Program overview, S. Platts 2023 (NTRS 20230017691)",
+      "url": "https://ntrs.nasa.gov/api/citations/20230017691/downloads/HRP_OverviewPlattS2.pdf"
+    },
+    "sleep_risk": {
+      "title": "NASA - Risk of Performance Decrements and Adverse Health Outcomes Resulting from Sleep Loss, Circadian Desynchronization, and Work Overload",
+      "url": "https://www.nasa.gov/directorates/esdmd/hhp/risk-of-performance-decrements-and-adverse-health-outcomes-resulting-from-sleep-loss-circadian-desynchronization-and-work-overload"
+    },
+    "cv_panel": {
+      "title": "NASA HRP Cardiovascular Risks Standing Review Panel report",
+      "url": "https://core.ac.uk/works/15258908"
+    },
+    "std3001_v2": {
+      "title": "NASA-STD-3001 Volume 2, requirement V2 6004 (cabin CO2 limits)",
+      "url": ""
+    },
+    "std3001_v1": {
+      "title": "NASA-STD-3001 Volume 1 (space permissible exposure limit for radiation, 600 mSv career)",
+      "url": ""
+    },
+    "pvt": {
+      "title": "Basner, Mollicone & Dinges 2011, Acta Astronautica 69:949 (PVT-B); ISS Reaction Self Test",
+      "url": ""
+    },
+    "ares_osdr": {
+      "title": "ARES analysis of NASA OSDR mouse studies OSD-662 / OSD-654 (reports/REAL_NASA_DATA.md)",
+      "url": ""
+    },
+    "nasa_bone": {
+      "title": "NASA - Risk of Spaceflight-Induced Bone Changes (Human Research Program)",
+      "url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/"
+    },
+    "lang_2004": {
+      "title": "Lang et al. 2004, J Bone Miner Res 19:1006 - Cortical and trabecular bone mineral loss from the spine and hip in long-duration spaceflight (ISS, n=14)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15125798/"
+    }
+  },
+  "concerns": {
+    "cardio_rhythm": {
+      "title": "Fast or irregular heartbeat",
+      "system": "Heart and circulation",
+      "regions": [
+        "heart"
+      ],
+      "protocols": [
+        "GEN-01",
+        "CARD-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA tracks heart rhythm problems in flight as a recognised human risk of spaceflight.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "Evidence for in-flight rhythm problems comes mainly from individual case reports; NASA's cardiovascular review noted no systematic study had been published.",
+          "evidence": "established-spaceflight",
+          "source": "cv_panel"
+        },
+        {
+          "text": "If episodes keep returning, demanding tasks such as spacewalks may need to wait until the medical officer has reviewed them.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Continuous ECG while the episode lasts; ARES re-checks every minute",
+          "Review every new episode against the astronaut's own rhythm record"
+        ],
+        "follow_up": [
+          "Repeat blood pressure and oxygen readings (protocol CARD-01)",
+          "Medical officer review of the saved ECG strips"
+        ],
+        "prevention": [
+          "Keep fluid intake and sleep on schedule",
+          "Report palpitations, dizziness or chest discomfort early"
+        ],
+        "watch": [
+          "Resting heart rate (Gradual changes from normal)",
+          "Heart rate variability"
+        ]
+      }
+    },
+    "cardio_drift": {
+      "title": "Gradual heart and blood-pressure change",
+      "system": "Heart and circulation",
+      "regions": [
+        "heart",
+        "aorta",
+        "vena_cava",
+        "arteries",
+        "veins"
+      ],
+      "protocols": [
+        "GEN-01",
+        "FLUID-01"
+      ],
+      "long_term": [
+        {
+          "text": "After long periods in weightlessness, astronauts can feel dizzy or faint when standing up in gravity (orthostatic intolerance) - a NASA-recognised risk on return to gravity.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "NASA lists cardiovascular health and performance as a human-system risk area for exploration missions.",
+          "evidence": "established-spaceflight",
+          "source": "hrp_2023"
+        },
+        {
+          "text": "A resting heart rate that keeps rising while blood pressure falls could mean lower fitness or fluid loss, and may reduce exercise capacity on arrival at Mars.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Daily resting heart rate and blood pressure compared with the astronaut's own baseline",
+          "ARES drift table updates every mission hour"
+        ],
+        "follow_up": [
+          "Fluid status check (protocol FLUID-01)",
+          "Medical officer review if the change lasts more than a few days"
+        ],
+        "prevention": [
+          "Keep the exercise programme and fluid intake on plan"
+        ],
+        "watch": [
+          "Resting heart rate",
+          "Blood pressure",
+          "Heart rate variability"
+        ]
+      }
+    },
+    "respiratory": {
+      "title": "Low blood oxygen or fast breathing",
+      "system": "Lungs and breathing",
+      "regions": [
+        "lung_left",
+        "lung_right",
+        "trachea"
+      ],
+      "protocols": [
+        "GEN-01",
+        "RESP-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA lists reduced crew health and performance due to low-oxygen atmospheres (hypoxia) as a human-system risk.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "Repeated or prolonged low-oxygen episodes could affect concentration and work performance during the mission.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Blood oxygen and breathing rate every minute until back in the personal band",
+          "Check cabin air readings at the same time (CO2, O2)"
+        ],
+        "follow_up": [
+          "Re-measure with a backup oximeter (protocol GEN-01)",
+          "Medical officer review of the episode"
+        ],
+        "prevention": [
+          "Keep cabin atmosphere within limits; report breathlessness early"
+        ],
+        "watch": [
+          "Blood oxygen level",
+          "Breathing rate",
+          "Cabin CO2"
+        ]
+      }
+    },
+    "infection": {
+      "title": "Fever-like change (temperature, heart and breathing up)",
+      "system": "Whole body (temperature)",
+      "regions": [
+        "skin"
+      ],
+      "protocols": [
+        "GEN-01",
+        "INF-01"
+      ],
+      "long_term": [
+        {
+          "text": "Spaceflight changes how the immune system works; NASA lists adverse health events due to altered immune response as a human-system risk.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "In a small closed cabin an untreated infection could spread to other crew members.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Temperature, heart rate and breathing every minute while raised",
+          "Symptom check twice a day"
+        ],
+        "follow_up": [
+          "Screening steps in protocol INF-01",
+          "Record symptoms in the clinical log"
+        ],
+        "prevention": [
+          "Hand hygiene and shared-surface cleaning"
+        ],
+        "watch": [
+          "Body temperature",
+          "Heart rate",
+          "Breathing rate"
+        ]
+      }
+    },
+    "fluid": {
+      "title": "Possible fluid loss (dehydration)",
+      "system": "Heart and circulation, kidneys",
+      "regions": [
+        "heart",
+        "kidney_left",
+        "kidney_right"
+      ],
+      "protocols": [
+        "GEN-01",
+        "FLUID-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA lists kidney stone formation as a spaceflight risk; low fluid intake is a known contributor.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "NASA lists dizziness on standing (orthostatic intolerance) on return to gravity as a risk; low fluid volume makes it worse.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Heart rate and blood pressure each cuff reading",
+          "Daily fluid intake log"
+        ],
+        "follow_up": [
+          "Assessment steps in protocol FLUID-01"
+        ],
+        "prevention": [
+          "Planned fluid intake, especially around exercise"
+        ],
+        "watch": [
+          "Blood pressure",
+          "Resting heart rate",
+          "Kidney lab markers"
+        ]
+      }
+    },
+    "fatigue": {
+      "title": "Fatigue and lost sleep",
+      "system": "Brain function (alertness)",
+      "regions": [
+        "brain"
+      ],
+      "protocols": [
+        "FAT-01",
+        "BEH-01"
+      ],
+      "long_term": [
+        {
+          "text": "Astronauts commonly experience sleep deprivation and body-clock disturbance in flight; NASA lists performance decrements and health effects from sleep loss as a human-system risk.",
+          "evidence": "established-spaceflight",
+          "source": "sleep_risk"
+        },
+        {
+          "text": "Slower reaction times raise the chance of errors in critical tasks.",
+          "evidence": "established-spaceflight",
+          "source": "sleep_risk"
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Reaction time and alertness test (PVT-B) daily",
+          "Sleep hours from the wrist sensor every day"
+        ],
+        "follow_up": [
+          "Countermeasure review in protocols FAT-01 / BEH-01",
+          "Private medical-officer conversation if the watch status lasts several days"
+        ],
+        "prevention": [
+          "Protect sleep periods; adjust workload"
+        ],
+        "watch": [
+          "Reaction time",
+          "Sleep hours",
+          "Resting heart rate"
+        ]
+      }
+    },
+    "radiation": {
+      "title": "Radiation exposure",
+      "system": "Whole body (exposure)",
+      "regions": [],
+      "protocols": [
+        "RAD-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA lists adverse health outcomes from space radiation (cancer, heart and nervous-system effects) as a human-system risk.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "NASA limits career radiation exposure to 600 mSv.",
+          "evidence": "established-spaceflight",
+          "source": "std3001_v1"
+        },
+        {
+          "text": "ARES measures dose only; it does not estimate the biological effect on any individual.",
+          "evidence": "established-spaceflight",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Dosimeter dose rate every minute",
+          "Cumulative dose versus the career limit"
+        ],
+        "follow_up": [
+          "Record the event dose for each crew member"
+        ],
+        "prevention": [
+          "Storm shelter during solar particle events (protocol RAD-01)"
+        ],
+        "watch": [
+          "Dose rate",
+          "Cumulative dose"
+        ]
+      }
+    },
+    "co2": {
+      "title": "High cabin carbon dioxide",
+      "system": "Cabin air (affects the whole crew)",
+      "regions": [
+        "lung_left",
+        "lung_right"
+      ],
+      "protocols": [
+        "ENV-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA sets cabin CO2 limits (3 mmHg 1-hour average) because higher levels affect crew health and performance.",
+          "evidence": "established-spaceflight",
+          "source": "std3001_v2"
+        },
+        {
+          "text": "If the CO2 removal system keeps degrading, symptoms could spread across the whole crew.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Cabin CO2 every minute; 1-hour and 7-day averages"
+        ],
+        "follow_up": [
+          "Vehicle checks in protocol ENV-01"
+        ],
+        "prevention": [
+          "Life-support maintenance on schedule"
+        ],
+        "watch": [
+          "Cabin CO2",
+          "Breathing rate of all crew"
+        ]
+      }
+    },
+    "sensor": {
+      "title": "Sensor problem (not a health problem)",
+      "system": "Monitoring equipment",
+      "regions": [],
+      "protocols": [
+        "GEN-01"
+      ],
+      "long_term": [
+        {
+          "text": "Frequent false alarms can make a crew ignore real ones (alarm fatigue).",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Signal quality of every sensor, every minute"
+        ],
+        "follow_up": [
+          "Re-seat or replace the sensor; confirm with a backup device (protocol GEN-01)"
+        ],
+        "prevention": [
+          "Pre-shift sensor fit check"
+        ],
+        "watch": [
+          "Sensor health"
+        ]
+      }
+    },
+    "musculoskeletal": {
+      "title": "Muscle and bone changes in weightlessness",
+      "system": "Muscles and bones",
+      "regions": [
+        "soleus_left",
+        "soleus_right",
+        "tibia_left",
+        "tibia_right",
+        "femur_left",
+        "femur_right"
+      ],
+      "protocols": [],
+      "long_term": [
+        {
+          "text": "NASA lists bone fracture due to spaceflight-induced bone changes as a human-system risk.",
+          "evidence": "established-spaceflight",
+          "source": "hrp_2023"
+        },
+        {
+          "text": "In NASA mouse studies, flight changed the muscle-fibre make-up of the calf (soleus) and thinned the tibia's outer bone layer.",
+          "evidence": "spaceflight-research",
+          "source": "ares_osdr"
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "No onboard muscle or bone measurement in this prototype"
+        ],
+        "follow_up": [
+          "Bone and muscle checks on return (outside ARES)"
+        ],
+        "prevention": [
+          "Daily resistance and aerobic exercise programme"
+        ],
+        "watch": [
+          "Exercise compliance"
+        ]
+      }
+    },
+    "renal_liver": {
+      "title": "Kidney or liver blood-test change",
+      "system": "Kidneys and liver (lab markers)",
+      "regions": [
+        "kidney_left",
+        "kidney_right",
+        "liver"
+      ],
+      "protocols": [
+        "GEN-01"
+      ],
+      "long_term": [
+        {
+          "text": "NASA lists kidney stone formation as a spaceflight risk.",
+          "evidence": "established-spaceflight",
+          "source": "nasa_risks"
+        },
+        {
+          "text": "A single changed lab value is not a diagnosis; repeated changes need medical-officer review.",
+          "evidence": "theoretical",
+          "source": null
+        }
+      ],
+      "management": {
+        "monitoring": [
+          "Repeat the lab test at the next opportunity"
+        ],
+        "follow_up": [
+          "Compare with the astronaut's own pre-flight values"
+        ],
+        "prevention": [
+          "Hydration plan"
+        ],
+        "watch": [
+          "Creatinine, urea, liver enzymes"
+        ]
+      }
+    }
+  },
+  "population_estimates": {
+    "bone_density_loss": {
+      "title": "Average bone-density loss in weight-bearing bones during spaceflight",
+      "rate_pct_per_month": [
+        1.0,
+        1.5
+      ],
+      "applies_to": [
+        "spine",
+        "pelvis",
+        "femur_left",
+        "femur_right",
+        "tibia_left",
+        "tibia_right"
+      ],
+      "not_applicable": {
+        "skull": "Not weight-bearing; spaceflight studies do not report this loss for the skull.",
+        "arm_bones": "Not weight-bearing; the published average rate does not apply.",
+        "ribcage": "Not a weight-bearing site covered by the published average.",
+        "shoulder_girdle": "Not a weight-bearing site covered by the published average.",
+        "skeleton_other": "No published average for this group of bones."
+      },
+      "basis": "On average, weight-bearing bones such as the spine and hips lose 1-1.5% of their density per month on 4-6-month missions (NASA). ISS measurements: about 0.9%/month at the spine and 1.4-1.5%/month at the hip (Lang 2004). It is unknown whether the rate continues on longer missions; exercise countermeasures reduce it.",
+      "sources": [
+        "nasa_bone",
+        "lang_2004"
+      ],
+      "evidence": "established-spaceflight",
+      "caveat": "Population average for crews before modern countermeasures were fully in use - NOT a measurement of this astronaut. Bone density can only be measured on the ground (DXA/QCT before and after flight)."
+    }
+  }
+}

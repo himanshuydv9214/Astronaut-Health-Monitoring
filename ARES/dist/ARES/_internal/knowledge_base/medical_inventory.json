@@ -1,0 +1,16 @@
+{
+  "_meta": {"status": "ILLUSTRATIVE - fictional inventory for the demo vehicle", "version": "0.1-demo"},
+  "items": [
+    {"item": "Pulse oximeter", "qty": 3, "location": "Med kit A", "notes": "one primary per crew wearable set + backup"},
+    {"item": "ECG monitor (multi-lead capable)", "qty": 1, "location": "Med bay", "notes": ""},
+    {"item": "Automated external defibrillator (AED)", "qty": 1, "location": "Med bay", "notes": ""},
+    {"item": "Blood pressure cuff (automatic)", "qty": 2, "location": "Med kit A", "notes": ""},
+    {"item": "Manual BP cuff + stethoscope", "qty": 1, "location": "Med kit A", "notes": "backup"},
+    {"item": "Thermometer", "qty": 2, "location": "Med kit A", "notes": ""},
+    {"item": "Onboard oxygen supply", "qty": 1, "location": "Med bay", "notes": "use per approved procedure only"},
+    {"item": "Fluid replacement supplies", "qty": 6, "location": "Med kit B", "notes": "use per approved procedure only"},
+    {"item": "Personal dosimeters", "qty": 4, "location": "Worn by crew", "notes": ""},
+    {"item": "Spare ECG electrodes", "qty": 60, "location": "Med kit A", "notes": ""},
+    {"item": "Storm shelter", "qty": 1, "location": "Aft water-wall compartment", "notes": "fictional layout"}
+  ]
+}
