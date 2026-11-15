@@ -1,0 +1,949 @@
+{
+ "model_D_radlab": {
+  "source": "OSDR RadLab, DOSTEL-1 (ISS Columbus), absorbed_dose_rate as reported by RadLab",
+  "labels": "NASA JSC SRAG SEP list (GOES >10 MeV), via github.com/ktindiana/fetchsep reference/SRAG_SEP_List.csv",
+  "n_readings": 490504,
+  "period": [
+   "2022-03-01 10:26:26",
+   "2024-10-29 09:18:08"
+  ],
+  "days_with_data": 529.6,
+  "threshold_z": 6.0,
+  "events_total": 33,
+  "events_evaluable": 20,
+  "held_out": {
+   "events": 16,
+   "evaluable": 15,
+   "detected": 3,
+   "strong_ge100pfu_evaluable": 10,
+   "strong_detected": 3,
+   "false_alarm_episodes": 16,
+   "days": 278.5,
+   "false_alarms_per_30d": 1.72,
+   "naive_daily_mean_detected": 0
+  },
+  "dev_calibrated_threshold": {
+   "z": 1.35,
+   "held_out_false_alarms_per_30d": 12.1
+  },
+  "development": {
+   "evaluable": 5,
+   "detected": 0
+  },
+  "events": [
+   {
+    "start": "2022-03-28 13:25:00",
+    "peak_pfu_10MeV": 18.7,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.8,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2022-03-31 06:20:00",
+    "peak_pfu_10MeV": 10.6,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": -0.7,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2022-04-02 14:30:00",
+    "peak_pfu_10MeV": 32.2,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.8,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2022-08-27 11:55:00",
+    "peak_pfu_10MeV": 27.5,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-02-25 21:10:00",
+    "peak_pfu_10MeV": 58.8,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.0,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-03-13 07:45:00",
+    "peak_pfu_10MeV": 22.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.2,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-04-23 18:15:00",
+    "peak_pfu_10MeV": 26.2,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-05-08 12:40:00",
+    "peak_pfu_10MeV": 38.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-05-09 23:35:00",
+    "peak_pfu_10MeV": 83.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-07-16 05:45:00",
+    "peak_pfu_10MeV": 18.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-07-18 01:15:00",
+    "peak_pfu_10MeV": 620.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-07-29 00:20:00",
+    "peak_pfu_10MeV": 154.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-08-05 11:15:00",
+    "peak_pfu_10MeV": 18.5,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-08-05 23:45:00",
+    "peak_pfu_10MeV": 17.7,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-08-08 01:15:00",
+    "peak_pfu_10MeV": 47.7,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-09-01 04:30:00",
+    "peak_pfu_10MeV": 25.8,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2023-12-15 23:45:00",
+    "peak_pfu_10MeV": 13.9,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "development"
+   },
+   {
+    "start": "2024-01-03 20:05:00",
+    "peak_pfu_10MeV": 20.0,
+    "dst_nT": null,
+    "evaluable": false,
+    "max_z": null,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-01-29 06:15:00",
+    "peak_pfu_10MeV": 137.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.0,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-02-09 15:30:00",
+    "peak_pfu_10MeV": 187.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.8,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-02-12 08:05:00",
+    "peak_pfu_10MeV": 117.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.2,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-02-14 09:10:00",
+    "peak_pfu_10MeV": 47.7,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.8,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-03-15 20:50:00",
+    "peak_pfu_10MeV": 16.7,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.2,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-03-23 04:00:00",
+    "peak_pfu_10MeV": 956.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 2.8,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-05-10 13:35:00",
+    "peak_pfu_10MeV": 206.9,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.1,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-05-11 02:10:00",
+    "peak_pfu_10MeV": 116.4,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 23.6,
+    "detected": true,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-05-13 14:00:00",
+    "peak_pfu_10MeV": 120.9,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 15.8,
+    "detected": true,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-06-08 02:55:00",
+    "peak_pfu_10MeV": 1028.5,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 4.2,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-07-23 03:00:00",
+    "peak_pfu_10MeV": 24.8,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 2.5,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-09-09 08:50:00",
+    "peak_pfu_10MeV": 34.2,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 0.7,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-09-17 07:35:00",
+    "peak_pfu_10MeV": 33.6,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 1.0,
+    "detected": false,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-10-09 05:05:00",
+    "peak_pfu_10MeV": 1812.0,
+    "dst_nT": null,
+    "evaluable": true,
+    "max_z": 11.3,
+    "detected": true,
+    "split": "held-out 2024"
+   },
+   {
+    "start": "2024-10-26 18:05:00",
+    "peak_pfu_10MeV": 363.7,
+    "dst_nT": -341.0,
+    "evaluable": true,
+    "max_z": 1.7,
+    "detected": false,
+    "split": "held-out 2024"
+   }
+  ]
+ },
+ "model_E_inspiration4": {
+  "n_crew": 4,
+  "n_markers": 27,
+  "qc_excluded_samples": [
+   {
+    "crew": "C003",
+    "tp": "L-92",
+    "implausible": [
+     {
+      "marker": "absolute_neutrophils",
+      "value": 10.1,
+      "lo": 1500.0,
+      "hi": 7800.0
+     },
+     {
+      "marker": "mpv",
+      "value": 330.0,
+      "lo": 7.5,
+      "hi": 12.5
+     },
+     {
+      "marker": "platelet_count",
+      "value": 12.9,
+      "lo": 140.0,
+      "hi": 400.0
+     }
+    ]
+   }
+  ],
+  "preflight_flag_rate": {
+   "generic_range": 0.052,
+   "personal_baseline_loo": 0.042,
+   "n": 288
+  },
+  "postflight": {
+   "generic_flags": 17,
+   "personal_flags": 8,
+   "personal_only": 7,
+   "generic_only": 16,
+   "both": 1,
+   "n": 430,
+   "generic_repeating_preflight_trait": 9
+  },
+  "by_timepoint": {
+   "R+1": {
+    "personal": 2,
+    "generic": 5,
+    "n": 108
+   },
+   "R+45": {
+    "personal": 4,
+    "generic": 5,
+    "n": 107
+   },
+   "R+82": {
+    "personal": 0,
+    "generic": 2,
+    "n": 108
+   },
+   "R+194": {
+    "personal": 2,
+    "generic": 5,
+    "n": 107
+   }
+  },
+  "personal_flags_R1": [
+   {
+    "crew": "C003",
+    "marker": "alt",
+    "value": 19.0,
+    "personal_mean": 12.67,
+    "z": 3.72,
+    "generic_flag": false
+   },
+   {
+    "crew": "C001",
+    "marker": "alt",
+    "value": 9.0,
+    "personal_mean": 14.67,
+    "z": -3.14,
+    "generic_flag": false
+   }
+  ],
+  "generic_preflight_examples": [
+   {
+    "crew": "C001",
+    "marker": "creatinine",
+    "tp": "L-3",
+    "value": 1.37
+   },
+   {
+    "crew": "C002",
+    "marker": "ast",
+    "tp": "L-3",
+    "value": 40.0
+   },
+   {
+    "crew": "C002",
+    "marker": "hemoglobin",
+    "tp": "L-3",
+    "value": 11.5
+   },
+   {
+    "crew": "C002",
+    "marker": "red_blood_cell_count",
+    "tp": "L-3",
+    "value": 3.72
+   },
+   {
+    "crew": "C003",
+    "marker": "alkaline_phosphatase",
+    "tp": "L-3",
+    "value": 31.0
+   },
+   {
+    "crew": "C003",
+    "marker": "alkaline_phosphatase",
+    "tp": "L-92",
+    "value": 33.0
+   },
+   {
+    "crew": "C003",
+    "marker": "globulin",
+    "tp": "L-44",
+    "value": 3.9
+   },
+   {
+    "crew": "C003",
+    "marker": "glucose",
+    "tp": "L-44",
+    "value": 62.0
+   },
+   {
+    "crew": "C003",
+    "marker": "potassium",
+    "tp": "L-3",
+    "value": 3.3
+   },
+   {
+    "crew": "C003",
+    "marker": "total_protein",
+    "tp": "L-44",
+    "value": 8.8
+   },
+   {
+    "crew": "C003",
+    "marker": "urea_nitrogen_bun",
+    "tp": "L-3",
+    "value": 26.0
+   },
+   {
+    "crew": "C004",
+    "marker": "absolute_monocytes",
+    "tp": "L-3",
+    "value": 965.0
+   }
+  ],
+  "units_note": "LSDS-7 labels hemoglobin 'percent'; values and range (13.2-17.1) are g/dL.",
+  "cytokines": {
+   "n_analytes": 71,
+   "R1_consistent_ge3of4": [],
+   "preflight_loo_flag_rate_z3": 0.045,
+   "note": "Exploratory: 71 analytes x 4 crew, no multiplicity correction; shown as hypotheses only."
+  }
+ },
+ "model_C_soleus": {
+  "n_samples": 83,
+  "n_flight": 28,
+  "missions": [
+   "BION-M1",
+   "RR1",
+   "RR18",
+   "RR9"
+  ],
+  "features": [
+   "mhc_i",
+   "mhc_iia",
+   "mhc_iix"
+  ],
+  "effects": [
+   {
+    "mission": "BION-M1",
+    "feature": "mhc_i",
+    "n_flight": 4,
+    "n_ground": 7,
+    "median_flight": 0.44,
+    "median_ground": 0.905,
+    "hedges_g": -1.48,
+    "p_mwu": 0.0727
+   },
+   {
+    "mission": "BION-M1",
+    "feature": "mhc_iia",
+    "n_flight": 4,
+    "n_ground": 7,
+    "median_flight": 0.408,
+    "median_ground": 0.911,
+    "hedges_g": -1.46,
+    "p_mwu": 0.0424
+   },
+   {
+    "mission": "BION-M1",
+    "feature": "mhc_iix",
+    "n_flight": 4,
+    "n_ground": 7,
+    "median_flight": 2.366,
+    "median_ground": 1.302,
+    "hedges_g": 0.4,
+    "p_mwu": 0.5273
+   },
+   {
+    "mission": "BION-M1",
+    "feature": "GSK3_beta_content",
+    "n_flight": 4,
+    "n_ground": 7,
+    "median_flight": 0.608,
+    "median_ground": 1.029,
+    "hedges_g": -1.63,
+    "p_mwu": 0.0424
+   },
+   {
+    "mission": "RR1",
+    "feature": "mhc_i",
+    "n_flight": 4,
+    "n_ground": 8,
+    "median_flight": 0.512,
+    "median_ground": 0.945,
+    "hedges_g": -1.34,
+    "p_mwu": 0.0283
+   },
+   {
+    "mission": "RR1",
+    "feature": "mhc_iia",
+    "n_flight": 4,
+    "n_ground": 8,
+    "median_flight": 0.836,
+    "median_ground": 1.005,
+    "hedges_g": -0.29,
+    "p_mwu": 0.8081
+   },
+   {
+    "mission": "RR1",
+    "feature": "mhc_iix",
+    "n_flight": 4,
+    "n_ground": 7,
+    "median_flight": 3.821,
+    "median_ground": 0.539,
+    "hedges_g": 3.65,
+    "p_mwu": 0.0061
+   },
+   {
+    "mission": "RR1",
+    "feature": "GSK3_beta_content",
+    "n_flight": 4,
+    "n_ground": 8,
+    "median_flight": 0.788,
+    "median_ground": 0.985,
+    "hedges_g": -1.86,
+    "p_mwu": 0.0162
+   },
+   {
+    "mission": "RR18",
+    "feature": "mhc_i",
+    "n_flight": 10,
+    "n_ground": 20,
+    "median_flight": 0.576,
+    "median_ground": 1.148,
+    "hedges_g": -0.93,
+    "p_mwu": 0.0235
+   },
+   {
+    "mission": "RR18",
+    "feature": "mhc_iia",
+    "n_flight": 10,
+    "n_ground": 20,
+    "median_flight": 0.236,
+    "median_ground": 1.031,
+    "hedges_g": -3.02,
+    "p_mwu": 0.0
+   },
+   {
+    "mission": "RR18",
+    "feature": "mhc_iix",
+    "n_flight": 9,
+    "n_ground": 20,
+    "median_flight": 3.295,
+    "median_ground": 0.57,
+    "hedges_g": 2.15,
+    "p_mwu": 0.0003
+   },
+   {
+    "mission": "RR18",
+    "feature": "mhc_iib",
+    "n_flight": 9,
+    "n_ground": 18,
+    "median_flight": 2.229,
+    "median_ground": 1.093,
+    "hedges_g": 0.76,
+    "p_mwu": 0.0538
+   },
+   {
+    "mission": "RR18",
+    "feature": "GSK3_beta_content",
+    "n_flight": 10,
+    "n_ground": 20,
+    "median_flight": 0.498,
+    "median_ground": 0.943,
+    "hedges_g": -1.38,
+    "p_mwu": 0.0017
+   },
+   {
+    "mission": "RR9",
+    "feature": "mhc_i",
+    "n_flight": 10,
+    "n_ground": 19,
+    "median_flight": 0.881,
+    "median_ground": 1.009,
+    "hedges_g": -0.52,
+    "p_mwu": 0.1617
+   },
+   {
+    "mission": "RR9",
+    "feature": "mhc_iia",
+    "n_flight": 7,
+    "n_ground": 15,
+    "median_flight": 0.181,
+    "median_ground": 0.571,
+    "hedges_g": -1.36,
+    "p_mwu": 0.0011
+   },
+   {
+    "mission": "RR9",
+    "feature": "mhc_iix",
+    "n_flight": 9,
+    "n_ground": 16,
+    "median_flight": 5.057,
+    "median_ground": 0.935,
+    "hedges_g": 2.35,
+    "p_mwu": 0.0003
+   },
+   {
+    "mission": "RR9",
+    "feature": "mhc_iib",
+    "n_flight": 10,
+    "n_ground": 18,
+    "median_flight": 2.956,
+    "median_ground": 0.993,
+    "hedges_g": 1.72,
+    "p_mwu": 0.0001
+   },
+   {
+    "mission": "RR9",
+    "feature": "GSK3_beta_content",
+    "n_flight": 10,
+    "n_ground": 20,
+    "median_flight": 0.635,
+    "median_ground": 0.938,
+    "hedges_g": -1.61,
+    "p_mwu": 0.0003
+   }
+  ],
+  "leave_one_mission_out": [
+   {
+    "held_out_mission": "RR1",
+    "n": 12,
+    "n_flight": 4,
+    "auc": 0.938,
+    "accuracy": 0.833,
+    "mhc_iix_rule_accuracy": 0.917,
+    "majority_accuracy": 0.667
+   },
+   {
+    "held_out_mission": "RR9",
+    "n": 30,
+    "n_flight": 10,
+    "auc": 0.88,
+    "accuracy": 0.8,
+    "mhc_iix_rule_accuracy": 0.9,
+    "majority_accuracy": 0.667
+   },
+   {
+    "held_out_mission": "RR18",
+    "n": 30,
+    "n_flight": 10,
+    "auc": 0.975,
+    "accuracy": 0.933,
+    "mhc_iix_rule_accuracy": 0.9,
+    "majority_accuracy": 0.667
+   },
+   {
+    "held_out_mission": "BION-M1",
+    "n": 11,
+    "n_flight": 4,
+    "auc": 0.714,
+    "accuracy": 0.727,
+    "mhc_iix_rule_accuracy": 0.727,
+    "majority_accuracy": 0.636
+   }
+  ],
+  "note": "Relative western-blot band intensities (normalised within study); mice, not humans. In RR-1 rows the GSK3-beta and pSer9 columns are identical, so GSK3 is not used as a feature."
+ },
+ "bone": {
+  "tibia_microct": [
+   {
+    "parameter": "trabecular_separation_millimeter",
+    "flight_mean": 0.196,
+    "ground_mean": 0.1856,
+    "pct_diff_vs_ground": 5.6,
+    "hedges_g_vs_ground": 0.94,
+    "p_mwu_vs_ground": 0.268,
+    "hedges_g_vs_vivarium": 0.39,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "trabecular_number_1_per_millimeter",
+    "flight_mean": 2.8335,
+    "ground_mean": 3.2328,
+    "pct_diff_vs_ground": -12.4,
+    "hedges_g_vs_ground": -1.3,
+    "p_mwu_vs_ground": 0.111,
+    "hedges_g_vs_vivarium": -0.14,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "degree_of_anisotropy",
+    "flight_mean": 1.9538,
+    "ground_mean": 2.119,
+    "pct_diff_vs_ground": -7.8,
+    "hedges_g_vs_ground": -0.86,
+    "p_mwu_vs_ground": 0.413,
+    "hedges_g_vs_vivarium": -0.55,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "connective_density",
+    "flight_mean": 0.0004,
+    "ground_mean": 0.0003,
+    "pct_diff_vs_ground": 12.3,
+    "hedges_g_vs_ground": 0.67,
+    "p_mwu_vs_ground": 0.533,
+    "hedges_g_vs_vivarium": 0.77,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "total_perimeter_millimeter",
+    "flight_mean": 4.468,
+    "ground_mean": 4.8384,
+    "pct_diff_vs_ground": -7.7,
+    "hedges_g_vs_ground": -3.03,
+    "p_mwu_vs_ground": 0.016,
+    "hedges_g_vs_vivarium": -1.62,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "endocortical_perimeter_millimeter",
+    "flight_mean": 2.7903,
+    "ground_mean": 2.9342,
+    "pct_diff_vs_ground": -4.9,
+    "hedges_g_vs_ground": -1.1,
+    "p_mwu_vs_ground": 0.111,
+    "hedges_g_vs_vivarium": -0.93,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "medullary_area_millimeter_squared",
+    "flight_mean": 0.5785,
+    "ground_mean": 0.6108,
+    "pct_diff_vs_ground": -5.3,
+    "hedges_g_vs_ground": -0.75,
+    "p_mwu_vs_ground": 0.286,
+    "hedges_g_vs_vivarium": -0.6,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "eccentricity",
+    "flight_mean": 0.644,
+    "ground_mean": 0.6638,
+    "pct_diff_vs_ground": -3.0,
+    "hedges_g_vs_ground": -0.5,
+    "p_mwu_vs_ground": 0.19,
+    "hedges_g_vs_vivarium": -1.32,
+    "n_flight": 4,
+    "n_ground": 5
+   },
+   {
+    "parameter": "cortical_thickness_millimeter",
+    "flight_mean": 0.1853,
+    "ground_mean": 0.21,
+    "pct_diff_vs_ground": -11.8,
+    "hedges_g_vs_ground": -2.08,
+    "p_mwu_vs_ground": 0.032,
+    "hedges_g_vs_vivarium": -1.42,
+    "n_flight": 4,
+    "n_ground": 5
+   }
+  ],
+  "tibia_groups": {
+   "F": "Space Flight",
+   "GC": "Ground Control (habitat)",
+   "Viv": "Vivarium",
+   "CC": "Cohort Control 2",
+   "FViv": "Cohort Control 1"
+  },
+  "femur_western_blot": [
+   {
+    "parameter": "GSK3_beta_content",
+    "flight_median": 1.305,
+    "ground_median": 1.753,
+    "hedges_g_vs_ground": -0.72,
+    "p_mwu_vs_ground": 0.247,
+    "n_flight": 6,
+    "n_ground": 5
+   },
+   {
+    "parameter": "serine9_phosphorylated_GSK3_beta_content",
+    "flight_median": 1.738,
+    "ground_median": 3.536,
+    "hedges_g_vs_ground": -1.09,
+    "p_mwu_vs_ground": 0.082,
+    "n_flight": 6,
+    "n_ground": 5
+   },
+   {
+    "parameter": "ratio_of_phosphorylated_serine_9_to_total_GSK3_beta_content_",
+    "flight_median": 1.479,
+    "ground_median": 2.7,
+    "hedges_g_vs_ground": -0.66,
+    "p_mwu_vs_ground": 0.429,
+    "n_flight": 6,
+    "n_ground": 5
+   }
+  ],
+  "note": "RR-9 (SpaceX-12) mice, ~33 days; n = 4-6 per group; descriptive effect sizes, no multiplicity correction."
+ },
+ "genelab": [
+  {
+   "file": "GLDS-104_rna_seq_bulkRNASeq_v2_runsheet.csv",
+   "samples": 12,
+   "groups": {
+    "Ground Control": 6,
+    "Space Flight": 6
+   },
+   "tech_reps": 0,
+   "study": "OSD-104",
+   "status": "metadata only (sample design + raw FASTQ links); expression model needs the GeneLab normalised-counts table, not processed in this build"
+  },
+  {
+   "file": "GLDS-673_rna_seq_bulkRNASeq_v2_runsheet.csv",
+   "samples": 30,
+   "groups": {
+    "Space Flight": 10,
+    "Ground Control": 10,
+    "Vivarium Control": 10
+   },
+   "tech_reps": 6,
+   "study": "OSD-770",
+   "status": "metadata only (sample design + raw FASTQ links); expression model needs the GeneLab normalised-counts table, not processed in this build"
+  }
+ ],
+ "research_evidence": {
+  "soleus_left": [
+   {
+    "title": "Slow-to-fast fibre shift after spaceflight",
+    "dataset": "OSD-662 / LSDS-75 (RR-1, RR-9, RR-18, Bion-M1)",
+    "summary": "MHC IIx higher in flight mice (Hedges g 2.35 RR-9, 2.15 RR-18, 3.65 RR-1); MHC IIa lower. Leave-one-mission-out AUC 0.714\u20130.975.",
+    "effect": "fibre-type shift"
+   }
+  ],
+  "soleus_right": [
+   {
+    "title": "Slow-to-fast fibre shift after spaceflight",
+    "dataset": "OSD-662 / LSDS-75 (RR-1, RR-9, RR-18, Bion-M1)",
+    "summary": "MHC IIx higher in flight mice (Hedges g 2.35 RR-9, 2.15 RR-18, 3.65 RR-1); MHC IIa lower. Leave-one-mission-out AUC 0.714\u20130.975.",
+    "effect": "fibre-type shift"
+   }
+  ],
+  "tibia_left": [
+   {
+    "title": "Cortical bone loss after ~33 days in orbit",
+    "dataset": "OSD-654 / LSDS-66 (RR-9 microCT)",
+    "summary": "Cortical thickness -11.8% vs habitat ground control (g -2.08, p 0.032); trabecular number -12.4% (n.s.). n = 4 vs 5.",
+    "effect": "bone loss"
+   }
+  ],
+  "tibia_right": [
+   {
+    "title": "Cortical bone loss after ~33 days in orbit",
+    "dataset": "OSD-654 / LSDS-66 (RR-9 microCT)",
+    "summary": "Cortical thickness -11.8% vs habitat ground control (g -2.08, p 0.032); trabecular number -12.4% (n.s.). n = 4 vs 5.",
+    "effect": "bone loss"
+   }
+  ],
+  "femur_left": [
+   {
+    "title": "Femur GSK3-beta signalling (no clear change)",
+    "dataset": "OSD-663 / LSDS-70 (RR-9 western blot)",
+    "summary": "pSer9-GSK3-beta median 1.738 flight vs 3.536 ground (p 0.082); not significant at n = 6 vs 5.",
+    "effect": "inconclusive"
+   }
+  ],
+  "femur_right": [
+   {
+    "title": "Femur GSK3-beta signalling (no clear change)",
+    "dataset": "OSD-663 / LSDS-70 (RR-9 western blot)",
+    "summary": "pSer9-GSK3-beta median 1.738 flight vs 3.536 ground (p 0.082); not significant at n = 6 vs 5.",
+    "effect": "inconclusive"
+   }
+  ]
+ }
+}

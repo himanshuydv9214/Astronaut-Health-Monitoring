@@ -1,0 +1,241 @@
+system,scenario,episode,detected,latency_min,critical,reached_L3
+Static limits,blackout_emergency,blackout_emergency:100:100335,True,4.0,True,False
+Static limits,blackout_emergency,blackout_emergency:101:101335,True,4.0,True,False
+Static limits,blackout_emergency,blackout_emergency:102:102335,True,4.0,True,False
+Static limits,blackout_emergency,blackout_emergency:103:103335,True,3.0,True,False
+Static limits,blackout_emergency,blackout_emergency:104:104335,True,3.0,True,False
+Static limits,blackout_emergency,blackout_emergency:105:105335,True,-2.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:100:100113,True,286.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:101:101113,True,208.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:102:102113,True,24.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:103:103113,True,4.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:104:104113,True,75.0,True,False
+Static limits,cardiac_arrhythmia,cardiac_arrhythmia:105:105113,True,-1.0,True,False
+Static limits,dehydration,dehydration:100:100224,True,-192.0,False,False
+Static limits,dehydration,dehydration:101:101224,True,102.0,False,False
+Static limits,dehydration,dehydration:102:102224,False,,False,False
+Static limits,dehydration,dehydration:103:103224,False,,False,False
+Static limits,dehydration,dehydration:104:104224,False,,False,False
+Static limits,dehydration,dehydration:105:105224,True,-154.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:100:100039,True,-69.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:101:101039,True,68.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:102:102039,True,12.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:103:103039,True,-168.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:104:104039,True,85.0,False,False
+Static limits,gradual_deterioration,gradual_deterioration:105:105039,True,6.0,False,False
+Static limits,multi_system,multi_system:100:100298,True,19.0,True,False
+Static limits,multi_system,multi_system:101:101298,True,142.0,True,False
+Static limits,multi_system,multi_system:102:102298,True,55.0,True,False
+Static limits,multi_system,multi_system:103:103298,True,68.0,True,False
+Static limits,multi_system,multi_system:104:104298,True,-16.0,True,False
+Static limits,multi_system,multi_system:105:105298,True,-5.0,True,False
+Static limits,recovery,recovery:100:100409,False,,False,False
+Static limits,recovery,recovery:101:101409,True,38.0,False,False
+Static limits,recovery,recovery:102:102409,False,,False,False
+Static limits,recovery,recovery:103:103409,True,29.0,False,False
+Static limits,recovery,recovery:104:104409,False,,False,False
+Static limits,recovery,recovery:105:105409,False,,False,False
+Static limits,respiratory,respiratory:100:100150,True,210.0,False,False
+Static limits,respiratory,respiratory:101:101150,True,6.0,False,False
+Static limits,respiratory,respiratory:102:102150,True,29.0,False,False
+Static limits,respiratory,respiratory:103:103150,True,10.0,False,False
+Static limits,respiratory,respiratory:104:104150,True,4.0,False,False
+Static limits,respiratory,respiratory:105:105150,True,9.0,False,False
+Static limits,spo2_drop,spo2_drop:100:100076,True,4.0,True,False
+Static limits,spo2_drop,spo2_drop:101:101076,True,3.0,True,False
+Static limits,spo2_drop,spo2_drop:102:102076,True,3.0,True,False
+Static limits,spo2_drop,spo2_drop:103:103076,True,3.0,True,False
+Static limits,spo2_drop,spo2_drop:104:104076,True,1.0,True,False
+Static limits,spo2_drop,spo2_drop:105:105076,True,2.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:100:100335,True,8.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:101:101335,True,8.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:102:102335,True,8.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:103:103335,True,7.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:104:104335,True,7.0,True,False
+Static limits +5 min,blackout_emergency,blackout_emergency:105:105335,True,-2.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:100:100113,True,290.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:101:101113,True,212.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:102:102113,True,28.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:103:103113,True,8.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:104:104113,True,79.0,True,False
+Static limits +5 min,cardiac_arrhythmia,cardiac_arrhythmia:105:105113,True,3.0,True,False
+Static limits +5 min,dehydration,dehydration:100:100224,True,-155.0,False,False
+Static limits +5 min,dehydration,dehydration:101:101224,True,129.0,False,False
+Static limits +5 min,dehydration,dehydration:102:102224,False,,False,False
+Static limits +5 min,dehydration,dehydration:103:103224,False,,False,False
+Static limits +5 min,dehydration,dehydration:104:104224,False,,False,False
+Static limits +5 min,dehydration,dehydration:105:105224,True,-150.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:100:100039,True,167.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:101:101039,True,77.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:102:102039,True,16.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:103:103039,True,202.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:104:104039,True,146.0,False,False
+Static limits +5 min,gradual_deterioration,gradual_deterioration:105:105039,True,10.0,False,False
+Static limits +5 min,multi_system,multi_system:100:100298,True,23.0,True,False
+Static limits +5 min,multi_system,multi_system:101:101298,True,218.0,True,False
+Static limits +5 min,multi_system,multi_system:102:102298,True,63.0,True,False
+Static limits +5 min,multi_system,multi_system:103:103298,True,96.0,True,False
+Static limits +5 min,multi_system,multi_system:104:104298,True,1.0,True,False
+Static limits +5 min,multi_system,multi_system:105:105298,True,4.0,True,False
+Static limits +5 min,recovery,recovery:100:100409,False,,False,False
+Static limits +5 min,recovery,recovery:101:101409,True,59.0,False,False
+Static limits +5 min,recovery,recovery:102:102409,False,,False,False
+Static limits +5 min,recovery,recovery:103:103409,True,33.0,False,False
+Static limits +5 min,recovery,recovery:104:104409,False,,False,False
+Static limits +5 min,recovery,recovery:105:105409,False,,False,False
+Static limits +5 min,respiratory,respiratory:100:100150,True,214.0,False,False
+Static limits +5 min,respiratory,respiratory:101:101150,True,35.0,False,False
+Static limits +5 min,respiratory,respiratory:102:102150,True,126.0,False,False
+Static limits +5 min,respiratory,respiratory:103:103150,True,19.0,False,False
+Static limits +5 min,respiratory,respiratory:104:104150,True,8.0,False,False
+Static limits +5 min,respiratory,respiratory:105:105150,True,126.0,False,False
+Static limits +5 min,spo2_drop,spo2_drop:100:100076,True,8.0,True,False
+Static limits +5 min,spo2_drop,spo2_drop:101:101076,True,7.0,True,False
+Static limits +5 min,spo2_drop,spo2_drop:102:102076,True,7.0,True,False
+Static limits +5 min,spo2_drop,spo2_drop:103:103076,True,7.0,True,False
+Static limits +5 min,spo2_drop,spo2_drop:104:104076,True,5.0,True,False
+Static limits +5 min,spo2_drop,spo2_drop:105:105076,True,6.0,True,False
+NEWS2 >= 5,blackout_emergency,blackout_emergency:100:100335,True,7.0,True,True
+NEWS2 >= 5,blackout_emergency,blackout_emergency:101:101335,True,4.0,True,True
+NEWS2 >= 5,blackout_emergency,blackout_emergency:102:102335,True,37.0,True,True
+NEWS2 >= 5,blackout_emergency,blackout_emergency:103:103335,True,2.0,True,True
+NEWS2 >= 5,blackout_emergency,blackout_emergency:104:104335,True,3.0,True,True
+NEWS2 >= 5,blackout_emergency,blackout_emergency:105:105335,True,4.0,True,True
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:100:100113,True,16.0,True,True
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:101:101113,True,210.0,True,False
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:102:102113,True,24.0,True,False
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:103:103113,True,8.0,True,False
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:104:104113,True,76.0,True,False
+NEWS2 >= 5,cardiac_arrhythmia,cardiac_arrhythmia:105:105113,True,1.0,True,True
+NEWS2 >= 5,dehydration,dehydration:100:100224,True,-192.0,False,False
+NEWS2 >= 5,dehydration,dehydration:101:101224,True,88.0,False,True
+NEWS2 >= 5,dehydration,dehydration:102:102224,True,162.0,False,False
+NEWS2 >= 5,dehydration,dehydration:103:103224,True,134.0,False,True
+NEWS2 >= 5,dehydration,dehydration:104:104224,True,-163.0,False,True
+NEWS2 >= 5,dehydration,dehydration:105:105224,True,-154.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:100:100039,True,-106.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:101:101039,True,-258.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:102:102039,True,10.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:103:103039,True,-177.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:104:104039,True,-270.0,False,True
+NEWS2 >= 5,gradual_deterioration,gradual_deterioration:105:105039,True,-250.0,False,True
+NEWS2 >= 5,multi_system,multi_system:100:100298,True,8.0,True,True
+NEWS2 >= 5,multi_system,multi_system:101:101298,True,15.0,True,True
+NEWS2 >= 5,multi_system,multi_system:102:102298,True,25.0,True,True
+NEWS2 >= 5,multi_system,multi_system:103:103298,True,-1.0,True,True
+NEWS2 >= 5,multi_system,multi_system:104:104298,True,-23.0,True,True
+NEWS2 >= 5,multi_system,multi_system:105:105298,True,-10.0,True,True
+NEWS2 >= 5,recovery,recovery:100:100409,True,4.0,False,False
+NEWS2 >= 5,recovery,recovery:101:101409,True,2.0,False,True
+NEWS2 >= 5,recovery,recovery:102:102409,True,38.0,False,True
+NEWS2 >= 5,recovery,recovery:103:103409,True,2.0,False,True
+NEWS2 >= 5,recovery,recovery:104:104409,False,,False,False
+NEWS2 >= 5,recovery,recovery:105:105409,True,-2.0,False,True
+NEWS2 >= 5,respiratory,respiratory:100:100150,True,4.0,False,True
+NEWS2 >= 5,respiratory,respiratory:101:101150,True,13.0,False,True
+NEWS2 >= 5,respiratory,respiratory:102:102150,True,0.0,False,True
+NEWS2 >= 5,respiratory,respiratory:103:103150,True,4.0,False,True
+NEWS2 >= 5,respiratory,respiratory:104:104150,True,0.0,False,True
+NEWS2 >= 5,respiratory,respiratory:105:105150,True,-6.0,False,True
+NEWS2 >= 5,spo2_drop,spo2_drop:100:100076,True,3.0,True,True
+NEWS2 >= 5,spo2_drop,spo2_drop:101:101076,True,4.0,True,True
+NEWS2 >= 5,spo2_drop,spo2_drop:102:102076,True,9.0,True,True
+NEWS2 >= 5,spo2_drop,spo2_drop:103:103076,True,2.0,True,True
+NEWS2 >= 5,spo2_drop,spo2_drop:104:104076,True,-1.0,True,True
+NEWS2 >= 5,spo2_drop,spo2_drop:105:105076,True,-2.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:100:100335,True,4.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:101:101335,True,4.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:102:102335,True,4.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:103:103335,True,3.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:104:104335,True,3.0,True,True
+ARES rules,blackout_emergency,blackout_emergency:105:105335,True,3.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:100:100113,True,5.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:101:101113,True,4.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:102:102113,True,3.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:103:103113,True,3.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:104:104113,True,4.0,True,True
+ARES rules,cardiac_arrhythmia,cardiac_arrhythmia:105:105113,True,4.0,True,True
+ARES rules,dehydration,dehydration:100:100224,True,-155.0,False,False
+ARES rules,dehydration,dehydration:101:101224,True,-86.0,False,True
+ARES rules,dehydration,dehydration:102:102224,True,33.0,False,False
+ARES rules,dehydration,dehydration:103:103224,True,14.0,False,True
+ARES rules,dehydration,dehydration:104:104224,True,35.0,False,False
+ARES rules,dehydration,dehydration:105:105224,True,-21.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:100:100039,True,-76.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:101:101039,True,-109.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:102:102039,True,-100.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:103:103039,True,-84.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:104:104039,True,-108.0,False,True
+ARES rules,gradual_deterioration,gradual_deterioration:105:105039,True,-130.0,False,True
+ARES rules,multi_system,multi_system:100:100298,True,-14.0,True,True
+ARES rules,multi_system,multi_system:101:101298,True,-19.0,True,True
+ARES rules,multi_system,multi_system:102:102298,True,-21.0,True,True
+ARES rules,multi_system,multi_system:103:103298,True,-12.0,True,True
+ARES rules,multi_system,multi_system:104:104298,True,-9.0,True,True
+ARES rules,multi_system,multi_system:105:105298,True,-6.0,True,True
+ARES rules,recovery,recovery:100:100409,True,4.0,False,True
+ARES rules,recovery,recovery:101:101409,True,4.0,False,True
+ARES rules,recovery,recovery:102:102409,True,4.0,False,True
+ARES rules,recovery,recovery:103:103409,True,5.0,False,True
+ARES rules,recovery,recovery:104:104409,True,4.0,False,True
+ARES rules,recovery,recovery:105:105409,True,4.0,False,True
+ARES rules,respiratory,respiratory:100:100150,True,-9.0,False,True
+ARES rules,respiratory,respiratory:101:101150,True,-10.0,False,True
+ARES rules,respiratory,respiratory:102:102150,True,-10.0,False,True
+ARES rules,respiratory,respiratory:103:103150,True,-2.0,False,True
+ARES rules,respiratory,respiratory:104:104150,True,-8.0,False,True
+ARES rules,respiratory,respiratory:105:105150,True,-8.0,False,True
+ARES rules,spo2_drop,spo2_drop:100:100076,True,4.0,True,True
+ARES rules,spo2_drop,spo2_drop:101:101076,True,3.0,True,True
+ARES rules,spo2_drop,spo2_drop:102:102076,True,4.0,True,True
+ARES rules,spo2_drop,spo2_drop:103:103076,True,3.0,True,True
+ARES rules,spo2_drop,spo2_drop:104:104076,True,4.0,True,True
+ARES rules,spo2_drop,spo2_drop:105:105076,True,3.0,True,True
+ARES full,blackout_emergency,blackout_emergency:100:100335,True,4.0,True,True
+ARES full,blackout_emergency,blackout_emergency:101:101335,True,4.0,True,True
+ARES full,blackout_emergency,blackout_emergency:102:102335,True,4.0,True,True
+ARES full,blackout_emergency,blackout_emergency:103:103335,True,3.0,True,True
+ARES full,blackout_emergency,blackout_emergency:104:104335,True,3.0,True,True
+ARES full,blackout_emergency,blackout_emergency:105:105335,True,3.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:100:100113,True,5.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:101:101113,True,4.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:102:102113,True,3.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:103:103113,True,3.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:104:104113,True,4.0,True,True
+ARES full,cardiac_arrhythmia,cardiac_arrhythmia:105:105113,True,4.0,True,True
+ARES full,dehydration,dehydration:100:100224,True,-155.0,False,False
+ARES full,dehydration,dehydration:101:101224,True,-86.0,False,True
+ARES full,dehydration,dehydration:102:102224,True,33.0,False,False
+ARES full,dehydration,dehydration:103:103224,True,14.0,False,True
+ARES full,dehydration,dehydration:104:104224,True,35.0,False,False
+ARES full,dehydration,dehydration:105:105224,True,-21.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:100:100039,True,-76.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:101:101039,True,-109.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:102:102039,True,-100.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:103:103039,True,-84.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:104:104039,True,-108.0,False,True
+ARES full,gradual_deterioration,gradual_deterioration:105:105039,True,-130.0,False,True
+ARES full,multi_system,multi_system:100:100298,True,-14.0,True,True
+ARES full,multi_system,multi_system:101:101298,True,-19.0,True,True
+ARES full,multi_system,multi_system:102:102298,True,-21.0,True,True
+ARES full,multi_system,multi_system:103:103298,True,-12.0,True,True
+ARES full,multi_system,multi_system:104:104298,True,-9.0,True,True
+ARES full,multi_system,multi_system:105:105298,True,-6.0,True,True
+ARES full,recovery,recovery:100:100409,True,4.0,False,True
+ARES full,recovery,recovery:101:101409,True,4.0,False,True
+ARES full,recovery,recovery:102:102409,True,4.0,False,True
+ARES full,recovery,recovery:103:103409,True,5.0,False,True
+ARES full,recovery,recovery:104:104409,True,4.0,False,True
+ARES full,recovery,recovery:105:105409,True,4.0,False,True
+ARES full,respiratory,respiratory:100:100150,True,-9.0,False,True
+ARES full,respiratory,respiratory:101:101150,True,-10.0,False,True
+ARES full,respiratory,respiratory:102:102150,True,-10.0,False,True
+ARES full,respiratory,respiratory:103:103150,True,-2.0,False,True
+ARES full,respiratory,respiratory:104:104150,True,-8.0,False,True
+ARES full,respiratory,respiratory:105:105150,True,-8.0,False,True
+ARES full,spo2_drop,spo2_drop:100:100076,True,4.0,True,True
+ARES full,spo2_drop,spo2_drop:101:101076,True,3.0,True,True
+ARES full,spo2_drop,spo2_drop:102:102076,True,4.0,True,True
+ARES full,spo2_drop,spo2_drop:103:103076,True,3.0,True,True
+ARES full,spo2_drop,spo2_drop:104:104076,True,4.0,True,True
+ARES full,spo2_drop,spo2_drop:105:105076,True,3.0,True,True

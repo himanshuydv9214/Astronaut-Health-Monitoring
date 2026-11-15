@@ -1,0 +1,697 @@
+{
+  "data": "SIMULATED. Held-out synthetic subjects [100, 101, 102, 103, 104, 105] never seen in training (astronaut-level split).",
+  "test_rows": 110009,
+  "test_episodes": 72,
+  "detection": {
+    "Static limits": {
+      "events": 48,
+      "recall": 0.854,
+      "median_latency_min": 4.0,
+      "missed_critical": 0,
+      "critical_events": 24,
+      "nominal_crew_days": 26.19,
+      "alerts_L1+_per_crew_day": 11.798,
+      "minutes_L1+_pct": 2.195,
+      "alerts_L2+_per_crew_day": 11.798,
+      "minutes_L2+_pct": 2.195,
+      "minute_level_L2": {
+        "precision": 0.928,
+        "recall": 0.503,
+        "f1": 0.652
+      }
+    },
+    "Static limits +5 min": {
+      "events": 48,
+      "recall": 0.854,
+      "median_latency_min": 16.0,
+      "missed_critical": 0,
+      "critical_events": 24,
+      "nominal_crew_days": 26.19,
+      "alerts_L1+_per_crew_day": 1.375,
+      "minutes_L1+_pct": 0.782,
+      "alerts_L2+_per_crew_day": 1.375,
+      "minutes_L2+_pct": 0.782,
+      "minute_level_L2": {
+        "precision": 0.97,
+        "recall": 0.461,
+        "f1": 0.625
+      }
+    },
+    "NEWS2 >= 5": {
+      "events": 48,
+      "recall": 0.979,
+      "median_latency_min": 3.0,
+      "missed_critical": 0,
+      "critical_events": 24,
+      "nominal_crew_days": 26.19,
+      "alerts_L1+_per_crew_day": 17.067,
+      "minutes_L1+_pct": 2.124,
+      "alerts_L2+_per_crew_day": 17.067,
+      "minutes_L2+_pct": 2.124,
+      "minute_level_L2": {
+        "precision": 0.882,
+        "recall": 0.535,
+        "f1": 0.666
+      }
+    },
+    "ARES rules": {
+      "events": 48,
+      "recall": 1.0,
+      "median_latency_min": 3.0,
+      "missed_critical": 0,
+      "critical_events": 24,
+      "nominal_crew_days": 26.19,
+      "alerts_L1+_per_crew_day": 0.916,
+      "minutes_L1+_pct": 1.525,
+      "alerts_L2+_per_crew_day": 0.382,
+      "minutes_L2+_pct": 0.445,
+      "minute_level_L2": {
+        "precision": 0.955,
+        "recall": 0.848,
+        "f1": 0.899
+      }
+    },
+    "ARES full": {
+      "events": 48,
+      "recall": 1.0,
+      "median_latency_min": 3.0,
+      "missed_critical": 0,
+      "critical_events": 24,
+      "nominal_crew_days": 26.19,
+      "alerts_L1+_per_crew_day": 1.68,
+      "minutes_L1+_pct": 2.514,
+      "alerts_L2+_per_crew_day": 0.382,
+      "minutes_L2+_pct": 0.445,
+      "minute_level_L2": {
+        "precision": 0.955,
+        "recall": 0.848,
+        "f1": 0.899
+      }
+    }
+  },
+  "detection_by_scenario": [
+    {
+      "system": "ARES full",
+      "scenario": "blackout_emergency",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "ARES full",
+      "scenario": "cardiac_arrhythmia",
+      "recall": 1.0,
+      "median_latency": 4.0
+    },
+    {
+      "system": "ARES full",
+      "scenario": "dehydration",
+      "recall": 1.0,
+      "median_latency": -3.5
+    },
+    {
+      "system": "ARES full",
+      "scenario": "gradual_deterioration",
+      "recall": 1.0,
+      "median_latency": -104.0
+    },
+    {
+      "system": "ARES full",
+      "scenario": "multi_system",
+      "recall": 1.0,
+      "median_latency": -13.0
+    },
+    {
+      "system": "ARES full",
+      "scenario": "recovery",
+      "recall": 1.0,
+      "median_latency": 4.0
+    },
+    {
+      "system": "ARES full",
+      "scenario": "respiratory",
+      "recall": 1.0,
+      "median_latency": -8.5
+    },
+    {
+      "system": "ARES full",
+      "scenario": "spo2_drop",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "blackout_emergency",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "cardiac_arrhythmia",
+      "recall": 1.0,
+      "median_latency": 4.0
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "dehydration",
+      "recall": 1.0,
+      "median_latency": -3.5
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "gradual_deterioration",
+      "recall": 1.0,
+      "median_latency": -104.0
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "multi_system",
+      "recall": 1.0,
+      "median_latency": -13.0
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "recovery",
+      "recall": 1.0,
+      "median_latency": 4.0
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "respiratory",
+      "recall": 1.0,
+      "median_latency": -8.5
+    },
+    {
+      "system": "ARES rules",
+      "scenario": "spo2_drop",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "blackout_emergency",
+      "recall": 1.0,
+      "median_latency": 4.0
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "cardiac_arrhythmia",
+      "recall": 1.0,
+      "median_latency": 20.0
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "dehydration",
+      "recall": 1.0,
+      "median_latency": -33.0
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "gradual_deterioration",
+      "recall": 1.0,
+      "median_latency": -213.5
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "multi_system",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "recovery",
+      "recall": 0.83,
+      "median_latency": 2.0
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "respiratory",
+      "recall": 1.0,
+      "median_latency": 2.0
+    },
+    {
+      "system": "NEWS2 >= 5",
+      "scenario": "spo2_drop",
+      "recall": 1.0,
+      "median_latency": 2.5
+    },
+    {
+      "system": "Static limits",
+      "scenario": "blackout_emergency",
+      "recall": 1.0,
+      "median_latency": 3.5
+    },
+    {
+      "system": "Static limits",
+      "scenario": "cardiac_arrhythmia",
+      "recall": 1.0,
+      "median_latency": 49.5
+    },
+    {
+      "system": "Static limits",
+      "scenario": "dehydration",
+      "recall": 0.5,
+      "median_latency": -154.0
+    },
+    {
+      "system": "Static limits",
+      "scenario": "gradual_deterioration",
+      "recall": 1.0,
+      "median_latency": 9.0
+    },
+    {
+      "system": "Static limits",
+      "scenario": "multi_system",
+      "recall": 1.0,
+      "median_latency": 37.0
+    },
+    {
+      "system": "Static limits",
+      "scenario": "recovery",
+      "recall": 0.33,
+      "median_latency": 33.5
+    },
+    {
+      "system": "Static limits",
+      "scenario": "respiratory",
+      "recall": 1.0,
+      "median_latency": 9.5
+    },
+    {
+      "system": "Static limits",
+      "scenario": "spo2_drop",
+      "recall": 1.0,
+      "median_latency": 3.0
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "blackout_emergency",
+      "recall": 1.0,
+      "median_latency": 7.5
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "cardiac_arrhythmia",
+      "recall": 1.0,
+      "median_latency": 53.5
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "dehydration",
+      "recall": 0.5,
+      "median_latency": -150.0
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "gradual_deterioration",
+      "recall": 1.0,
+      "median_latency": 111.5
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "multi_system",
+      "recall": 1.0,
+      "median_latency": 43.0
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "recovery",
+      "recall": 0.33,
+      "median_latency": 46.0
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "respiratory",
+      "recall": 1.0,
+      "median_latency": 80.5
+    },
+    {
+      "system": "Static limits +5 min",
+      "scenario": "spo2_drop",
+      "recall": 1.0,
+      "median_latency": 7.0
+    }
+  ],
+  "sensor_failure": {
+    "Static limits": {
+      "medical_escalations_L2+": 3,
+      "episodes": 6
+    },
+    "Static limits +5 min": {
+      "medical_escalations_L2+": 1,
+      "episodes": 6
+    },
+    "NEWS2 >= 5": {
+      "medical_escalations_L2+": 32,
+      "episodes": 6
+    },
+    "ARES rules": {
+      "medical_escalations_L2+": 0,
+      "episodes": 6
+    },
+    "ARES full": {
+      "medical_escalations_L2+": 0,
+      "episodes": 6
+    },
+    "ARES sensor-alert latency_min (median)": 12.0,
+    "note": "Physiology is normal in these episodes; every L2+ escalation is a false medical alarm."
+  },
+  "comm_blackout": {
+    "latency_blackout_emergency_min": 3.5,
+    "latency_same_event_link_up_min": 3.5,
+    "note": "Detection is entirely onboard; link state must not change it. Queue behaviour (no message loss, priority order) is unit-tested."
+  },
+  "radiation": {
+    "spe_detected": 6,
+    "episodes": 6,
+    "median_detection_min_after_onset": 7.0,
+    "note": "SPE onset ramps over 60 min; detection = dosimeter rate > 3x modelled GCR for 5 min. Medical levels intentionally unaffected (radiation is an environmental response)."
+  },
+  "anomaly": {
+    "Isolation Forest (deployed)": {
+      "roc_auc": 0.7639,
+      "pr_auc": 0.8587,
+      "precision": 0.992,
+      "recall": 0.477,
+      "f1": 0.644,
+      "false_alarm_rate_nominal_min": 0.0054,
+      "median_latency_vs_L1_onset_min": 2.0,
+      "flags_on_sensor_fault_minutes": 0.0
+    },
+    "Local Outlier Factor": {
+      "roc_auc": 0.7548,
+      "pr_auc": 0.8541,
+      "precision": 0.99,
+      "recall": 0.493,
+      "f1": 0.659,
+      "false_alarm_rate_nominal_min": 0.0068,
+      "median_latency_vs_L1_onset_min": 0.0,
+      "flags_on_sensor_fault_minutes": 0.0
+    },
+    "One-Class SVM": {
+      "roc_auc": 0.7499,
+      "pr_auc": 0.8527,
+      "precision": 0.991,
+      "recall": 0.495,
+      "f1": 0.66,
+      "false_alarm_rate_nominal_min": 0.0062,
+      "median_latency_vs_L1_onset_min": 0.0,
+      "flags_on_sensor_fault_minutes": 0.003
+    },
+    "Autoencoder (MLP 14-10-4-10-14)": {
+      "roc_auc": 0.7523,
+      "pr_auc": 0.8512,
+      "precision": 0.993,
+      "recall": 0.468,
+      "f1": 0.636,
+      "false_alarm_rate_nominal_min": 0.0045,
+      "median_latency_vs_L1_onset_min": 1.0,
+      "flags_on_sensor_fault_minutes": 0.003
+    },
+    "Baseline: max personal z": {
+      "roc_auc": 0.7547,
+      "pr_auc": 0.852,
+      "precision": 0.993,
+      "recall": 0.456,
+      "f1": 0.625,
+      "false_alarm_rate_nominal_min": 0.0043,
+      "median_latency_vs_L1_onset_min": 0.0,
+      "flags_on_sensor_fault_minutes": 0.003
+    },
+    "_setup": {
+      "positives": "minutes with truth level >= 1 (no sensor fault)",
+      "negatives": "pre-onset nominal minutes",
+      "threshold": "99.5th pct of nominal validation scores",
+      "fit": "nominal minutes of train subjects 0-11"
+    }
+  },
+  "forecaster": {
+    "base_rate": 0.0199,
+    "test_rows": 81497,
+    "horizon_min": 30,
+    "Gradient boosting + isotonic (deployed)": {
+      "roc_auc": 0.8103,
+      "pr_auc": 0.3222,
+      "brier": 0.0154,
+      "ece": 0.0049,
+      "calibration": [
+        {
+          "bin": "0.0-0.1",
+          "n": 80261,
+          "mean_pred": 0.018,
+          "observed": 0.014
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 272,
+          "mean_pred": 0.12,
+          "observed": 0.074
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 351,
+          "mean_pred": 0.225,
+          "observed": 0.234
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 61,
+          "mean_pred": 0.397,
+          "observed": 0.475
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 96,
+          "mean_pred": 0.526,
+          "observed": 0.448
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 169,
+          "mean_pred": 0.635,
+          "observed": 0.586
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 186,
+          "mean_pred": 0.869,
+          "observed": 0.855
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 101,
+          "mean_pred": 0.993,
+          "observed": 0.97
+        }
+      ]
+    },
+    "Logistic regression": {
+      "roc_auc": 0.7838,
+      "pr_auc": 0.3134,
+      "brier": 0.0158,
+      "ece": 0.002,
+      "calibration": [
+        {
+          "bin": "0.0-0.1",
+          "n": 79920,
+          "mean_pred": 0.015,
+          "observed": 0.013
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 625,
+          "mean_pred": 0.139,
+          "observed": 0.13
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 258,
+          "mean_pred": 0.245,
+          "observed": 0.256
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 180,
+          "mean_pred": 0.346,
+          "observed": 0.378
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 147,
+          "mean_pred": 0.45,
+          "observed": 0.605
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 111,
+          "mean_pred": 0.547,
+          "observed": 0.541
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 66,
+          "mean_pred": 0.642,
+          "observed": 0.606
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 53,
+          "mean_pred": 0.756,
+          "observed": 0.755
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 63,
+          "mean_pred": 0.846,
+          "observed": 0.905
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 74,
+          "mean_pred": 0.952,
+          "observed": 1.0
+        }
+      ]
+    },
+    "Baseline: max personal z (score only)": {
+      "roc_auc": 0.6904,
+      "pr_auc": 0.2207
+    },
+    "by_time_to_event": {
+      "1-10 min ahead": {
+        "n_pos": 540,
+        "roc_auc": 0.8322
+      },
+      "11-20 min ahead": {
+        "n_pos": 540,
+        "roc_auc": 0.8286
+      },
+      "21-30 min ahead": {
+        "n_pos": 540,
+        "roc_auc": 0.7701
+      }
+    },
+    "leave_one_scenario_out": {
+      "spo2_drop": {
+        "pr_auc_scenario_unseen": 0.0246,
+        "pr_auc_scenario_seen": 0.034
+      },
+      "cardiac_arrhythmia": {
+        "pr_auc_scenario_unseen": 0.0189,
+        "pr_auc_scenario_seen": 0.0212
+      },
+      "respiratory": {
+        "pr_auc_scenario_unseen": 0.0218,
+        "pr_auc_scenario_seen": 0.4826
+      },
+      "dehydration": {
+        "pr_auc_scenario_unseen": 0.009,
+        "pr_auc_scenario_seen": 0.5875
+      },
+      "gradual_deterioration": {
+        "pr_auc_scenario_unseen": 0.3781,
+        "pr_auc_scenario_seen": 0.5571
+      },
+      "multi_system": {
+        "pr_auc_scenario_unseen": 0.1469,
+        "pr_auc_scenario_seen": 0.8898
+      },
+      "blackout_emergency": {
+        "pr_auc_scenario_unseen": 0.027,
+        "pr_auc_scenario_seen": 0.0258
+      },
+      "recovery": {
+        "pr_auc_scenario_unseen": 0.0104,
+        "pr_auc_scenario_seen": 0.0125
+      }
+    }
+  },
+  "confusion_truth_vs_ares_full": {
+    "rows=truth, cols=pred": [
+      [
+        56631,
+        2035,
+        283,
+        0
+      ],
+      [
+        21654,
+        793,
+        538,
+        283
+      ],
+      [
+        3547,
+        636,
+        4731,
+        5066
+      ],
+      [
+        9,
+        25,
+        2679,
+        11099
+      ]
+    ],
+    "over_triage_minutes": 8205,
+    "under_triage_minutes": 28550
+  },
+  "under_triage_breakdown": [
+    {
+      "scenario": "sleep_deprivation",
+      "truth": 1,
+      "pred": 0,
+      "minutes": 21338
+    },
+    {
+      "scenario": "radiation_event",
+      "truth": 2,
+      "pred": 0,
+      "minutes": 3479
+    },
+    {
+      "scenario": "cardiac_arrhythmia",
+      "truth": 3,
+      "pred": 2,
+      "minutes": 1703
+    },
+    {
+      "scenario": "dehydration",
+      "truth": 2,
+      "pred": 1,
+      "minutes": 547
+    },
+    {
+      "scenario": "blackout_emergency",
+      "truth": 3,
+      "pred": 2,
+      "minutes": 525
+    },
+    {
+      "scenario": "spo2_drop",
+      "truth": 3,
+      "pred": 2,
+      "minutes": 451
+    },
+    {
+      "scenario": "dehydration",
+      "truth": 1,
+      "pred": 0,
+      "minutes": 215
+    },
+    {
+      "scenario": "gradual_deterioration",
+      "truth": 1,
+      "pred": 0,
+      "minutes": 80
+    }
+  ],
+  "behavioral": {
+    "subjects_per_arm": 40,
+    "restriction": "sleep need - 2.5 h/night from day 4",
+    "sensitivity_flag_within_8d": 1.0,
+    "median_days_to_flag": 1.0,
+    "control_false_flag_rate_8d": 0.15,
+    "note": "Simulated dose-response; measures logic, not validity."
+  },
+  "runtime_s": 243.1
+}
