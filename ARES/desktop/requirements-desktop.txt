@@ -1,0 +1,7 @@
+# Build / run the ARES desktop window (in addition to ../requirements.txt)
+pyinstaller>=6.10
+pywebview>=5.3
+# Linux only: Qt WebEngine back-end for the window
+PyQt6>=6.6; sys_platform == "linux"
+PyQt6-WebEngine>=6.6; sys_platform == "linux"
+QtPy>=2.4; sys_platform == "linux"

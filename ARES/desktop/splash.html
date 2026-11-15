@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>ARES — starting</title>
+<style>
+  :root { --cyan:#3fd8ff; --ink:#e6f0ff; --ink2:#a7b9d4; --muted:#6c819f; --line:rgba(110,170,255,.18); --ok:#2fd39b; --err:#ff4d5e; --warn:#f2c94c; }
+  * { box-sizing: border-box; } html,body { height:100%; margin:0; }
+  body { background: radial-gradient(900px 600px at 50% 30%, rgba(59,130,255,.16), transparent 70%), #040914; color: var(--ink);
+    font: 14px/1.5 "Segoe UI", Inter, system-ui, sans-serif; display:grid; place-items:center; user-select:none; }
+  .card { width: min(560px, 92vw); text-align:center; }
+  .logo { width: 116px; height: 116px; margin: 0 auto 14px; position: relative; }
+  .ring { position:absolute; inset:0; border-radius:50%; border:3px solid var(--cyan); box-shadow: 0 0 30px rgba(63,216,255,.5), inset 0 0 18px rgba(63,216,255,.35); }
+  .ring.two { inset: 18px; border-width: 2px; border-style: dashed; animation: spin 6s linear infinite; opacity:.7; }
+  .dot { position:absolute; left:50%; top:50%; width:22px; height:22px; margin:-11px; border-radius:50%; background:var(--cyan); box-shadow:0 0 22px var(--cyan); animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } } @keyframes pulse { 50% { opacity:.45; transform: scale(.85); } }
+  h1 { margin: 0; font-size: 34px; letter-spacing: .32em; font-weight: 600; }
+  .sub { color: var(--muted); letter-spacing: .12em; font-size: 11.5px; text-transform: uppercase; margin-top: 4px; }
+  .tag { color: var(--ink2); margin: 10px 0 22px; }
+  ul { list-style:none; padding:0; margin:0 auto; text-align:left; border:1px solid var(--line); border-radius:12px; background: rgba(10,21,40,.7); }
+  li { display:grid; grid-template-columns: 26px 1fr; gap: 6px 10px; padding: 9px 14px; border-bottom: 1px solid rgba(110,170,255,.08); }
+  li:last-child { border-bottom:none; } li b { font-weight:600; } li small { grid-column: 2; color: var(--muted); font-size: 12px; }
+  .ic { width:18px; height:18px; border-radius:50%; border:2px solid #34435c; margin-top:2px; }
+  .running .ic { border-color: var(--cyan); border-right-color: transparent; animation: spin .8s linear infinite; }
+  .ok .ic { border-color: var(--ok); background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+  .error .ic { border-color: var(--err); background: var(--err); }
+  .err { display:none; margin-top: 16px; border:1px solid var(--err); background: rgba(255,77,94,.1); border-radius: 10px; padding: 12px 14px; text-align:left; color:#ffd1d6; }
+  .err.show { display:block; } button { background: rgba(20,40,72,.8); color: var(--ink); border:1px solid rgba(110,180,255,.35); border-radius: 8px; padding: 6px 12px; margin: 8px 6px 0 0; cursor:pointer; font: inherit; }
+  button:hover { border-color: var(--cyan); } .foot { margin-top: 16px; color: var(--muted); font-size: 11.5px; }
+</style></head>
+<body><div class="card">
+  <div class="logo"><div class="ring"></div><div class="ring two"></div><div class="dot"></div></div>
+  <h1>ARES</h1><div class="sub">Autonomous Risk Evaluation &amp; Emergency Support</div>
+  <div class="tag">Keeping Humanity Alive Beyond Earth</div>
+  <ul id="list"></ul>
+  <div class="err" id="err"><b>ARES could not start.</b><div id="errText"></div>
+    <button onclick="pywebview.api.retry()">Try again</button><button onclick="pywebview.api.open_logs()">Open logs</button><button onclick="pywebview.api.quit()">Quit</button></div>
+  <div class="foot" id="foot">Starting · runs fully offline on this computer</div>
+</div>
+<script>
+const STEPS = [["backend","Starting the local ARES service","Hidden background process on this computer only"],
+  ["recovery","Checking data and making a backup","Integrity check of the local databases"],
+  ["database","Local database","Health records, emergencies, test results"],
+  ["models","AI models and crew baselines","Unusual-pattern model and 30-min risk model, loaded locally"],
+  ["knowledge","Medical knowledge base","Stored onboard procedures"],
+  ["anatomy","3D anatomy","BodyParts3D hologram model"],
+  ["interface","Interface","Mission control screens"]];
+const list = document.getElementById("list");
+list.innerHTML = STEPS.map(([k,t,d]) => `<li id="s_${k}"><span class="ic"></span><b>${t}</b><small id="d_${k}">${d}</small></li>`).join("");
+function set(k, state, detail) { const li = document.getElementById("s_"+k); if (!li) return; li.className = state; if (detail) document.getElementById("d_"+k).textContent = detail; }
+async function poll() {
+  try {
+    const s = await pywebview.api.status();
+    const st = s.stages || {};
+    set("backend", s.state === "failed" ? "error" : st.server && st.server.state === "ok" ? "ok" : "running",
+        s.port ? `127.0.0.1:${s.port} · data in ${s.data_dir}` : null);
+    for (const [k] of STEPS.slice(1)) { const x = st[k]; if (x) set(k, x.state, x.detail); }
+    document.getElementById("foot").textContent = `ARES ${s.version} · runs fully offline on this computer · logs: ${s.log_dir}`;
+    if (s.state === "failed" || s.error && s.state !== "ready" && s.state !== "starting") {
+      document.getElementById("err").classList.add("show"); document.getElementById("errText").textContent = s.error || "Unknown error";
+    } else document.getElementById("err").classList.remove("show");
+  } catch (e) { /* api not ready yet */ }
+  setTimeout(poll, 400);
+}
+window.addEventListener("pywebviewready", poll);
+</script></body></html>

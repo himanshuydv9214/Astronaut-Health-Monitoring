@@ -1,0 +1,51 @@
+# Builds the ARES desktop app on GitHub's machines (no Windows PC needed). Actions tab -> "Build ARES desktop" ->
+# Run workflow; download the installer / portable zip / Linux tarball from the run's Artifacts.
+name: Build ARES desktop
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-22.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.13" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Build interface
+        working-directory: web3d
+        run: npm ci && npm run build
+      - name: Python dependencies
+        run: |
+          python -m venv .venv
+          ${{ runner.os == 'Windows' && '.venv\Scripts\python' || '.venv/bin/python' }} -m pip install -r requirements.txt -r desktop/requirements-desktop.txt
+      - name: Linux system libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libxcb-cursor0 libegl1 libnss3 libxkbcommon-x11-0 xvfb
+      - name: Inno Setup
+        if: runner.os == 'Windows'
+        run: if (-not (Test-Path "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe")) { choco install innosetup -y --no-progress }
+      - name: Build (Windows)
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: echo.| desktop\build_windows.bat
+      - name: Build (Linux)
+        if: runner.os == 'Linux'
+        run: bash desktop/build_linux.sh
+      - name: Reliability tests
+        run: ${{ runner.os == 'Windows' && '.venv\Scripts\python' || '.venv/bin/python' }} desktop/offline_tests.py --app ${{ runner.os == 'Windows' && 'dist\ARES\ARES.exe' || 'dist/ARES/ARES' }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ARES-${{ runner.os }}
+          path: |
+            dist/installer/*.exe
+            dist/*.zip
+            dist/*.tar.gz
+            desktop/offline_test_report.md
