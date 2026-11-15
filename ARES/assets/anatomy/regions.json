@@ -1,0 +1,1424 @@
+{
+ "source": "BodyParts3D (c) The Database Center for Life Science, CC BY 4.0",
+ "mirror": "github.com/Kevin-Mattheus-Moerman/BodyParts3D (release 3.0, obj_95 -> STL)",
+ "processing": "regions merged from atomic meshes, quadric-decimated, mm->m, Z-up->Y-up, facing +Z",
+ "total_triangles": 363740,
+ "regions": [
+  {
+   "id": "skin",
+   "label": "Skin (whole-body surface)",
+   "layer": "skin",
+   "system": "integumentary",
+   "bodyparts3d_ids": [
+    "FMA7163"
+   ],
+   "triangles": 69998,
+   "center": [
+    -0.0005,
+    0.8272,
+    -0.0005
+   ],
+   "size": [
+    0.6584,
+    1.6545,
+    0.2859
+   ]
+  },
+  {
+   "id": "heart",
+   "label": "Heart",
+   "layer": "organs",
+   "system": "cardiovascular",
+   "bodyparts3d_ids": [
+    "FMA3802",
+    "FMA3818",
+    "FMA3895",
+    "FMA4685",
+    "FMA4706",
+    "FMA4707",
+    "FMA4713",
+    "FMA71567",
+    "FMA71669",
+    "FMA71670",
+    "FMA7234",
+    "FMA7235",
+    "FMA7246",
+    "FMA7260",
+    "FMA7261",
+    "FMA7262",
+    "FMA7266",
+    "FMA7274",
+    "FMA76751",
+    "FMA76994"
+   ],
+   "triangles": 13998,
+   "center": [
+    0.022,
+    1.2506,
+    0.0253
+   ],
+   "size": [
+    0.1153,
+    0.1053,
+    0.1097
+   ]
+  },
+  {
+   "id": "lung_left",
+   "label": "Left lung",
+   "layer": "organs",
+   "system": "respiratory",
+   "bodyparts3d_ids": [
+    "FMA7370",
+    "FMA7371"
+   ],
+   "triangles": 7998,
+   "center": [
+    0.066,
+    1.2578,
+    0.0106
+   ],
+   "size": [
+    0.1197,
+    0.2589,
+    0.1792
+   ]
+  },
+  {
+   "id": "lung_right",
+   "label": "Right lung",
+   "layer": "organs",
+   "system": "respiratory",
+   "bodyparts3d_ids": [
+    "FMA7333",
+    "FMA7337",
+    "FMA7383"
+   ],
+   "triangles": 7998,
+   "center": [
+    -0.0642,
+    1.2587,
+    0.0105
+   ],
+   "size": [
+    0.1263,
+    0.2544,
+    0.1811
+   ]
+  },
+  {
+   "id": "trachea",
+   "label": "Trachea",
+   "layer": "organs",
+   "system": "respiratory",
+   "bodyparts3d_ids": [
+    "FMA7394"
+   ],
+   "triangles": 4000,
+   "center": [
+    0.0001,
+    1.3716,
+    0.0018
+   ],
+   "size": [
+    0.0259,
+    0.1178,
+    0.0422
+   ]
+  },
+  {
+   "id": "brain",
+   "label": "Brain",
+   "layer": "organs",
+   "system": "nervous",
+   "bodyparts3d_ids": [
+    "BP49",
+    "BP50",
+    "BP51",
+    "FMA258714",
+    "FMA258716",
+    "FMA61844",
+    "FMA62004",
+    "FMA62032",
+    "FMA62033",
+    "FMA62327",
+    "FMA62394",
+    "FMA67943",
+    "FMA67944",
+    "FMA72653",
+    "FMA72654",
+    "FMA72655",
+    "FMA72656",
+    "FMA72661",
+    "FMA72662",
+    "FMA72665",
+    "FMA72666",
+    "FMA72667",
+    "FMA72668",
+    "FMA72669",
+    "FMA72670",
+    "FMA72685",
+    "FMA72686",
+    "FMA72687",
+    "FMA72688",
+    "FMA72689",
+    "FMA72690",
+    "FMA72701",
+    "FMA72702",
+    "FMA72705",
+    "FMA72706",
+    "FMA72713",
+    "FMA72714",
+    "FMA72717",
+    "FMA72718",
+    "FMA72800",
+    "FMA72801",
+    "FMA72804",
+    "FMA72805",
+    "FMA72826",
+    "FMA72827",
+    "FMA72828",
+    "FMA72829",
+    "FMA72830",
+    "FMA72831",
+    "FMA72832",
+    "FMA72833",
+    "FMA72975",
+    "FMA72976",
+    "FMA72977",
+    "FMA72978",
+    "FMA73303",
+    "FMA73304",
+    "FMA73309",
+    "FMA73310",
+    "FMA73422",
+    "FMA73423",
+    "FMA73434",
+    "FMA73435",
+    "FMA73461",
+    "FMA73462",
+    "FMA73463",
+    "FMA73464",
+    "FMA78449",
+    "FMA78450",
+    "FMA78454",
+    "FMA78467",
+    "FMA78469"
+   ],
+   "triangles": 22000,
+   "center": [
+    0.0002,
+    1.5683,
+    -0.0068
+   ],
+   "size": [
+    0.1335,
+    0.1566,
+    0.1703
+   ]
+  },
+  {
+   "id": "liver",
+   "label": "Liver",
+   "layer": "organs",
+   "system": "digestive",
+   "bodyparts3d_ids": [
+    "FMA7197"
+   ],
+   "triangles": 7000,
+   "center": [
+    -0.0178,
+    1.1308,
+    0.0209
+   ],
+   "size": [
+    0.199,
+    0.174,
+    0.15
+   ]
+  },
+  {
+   "id": "kidney_left",
+   "label": "Left kidney",
+   "layer": "organs",
+   "system": "renal",
+   "bodyparts3d_ids": [
+    "FMA7205"
+   ],
+   "triangles": 3998,
+   "center": [
+    0.0555,
+    1.0796,
+    -0.022
+   ],
+   "size": [
+    0.0605,
+    0.1029,
+    0.0441
+   ]
+  },
+  {
+   "id": "kidney_right",
+   "label": "Right kidney",
+   "layer": "organs",
+   "system": "renal",
+   "bodyparts3d_ids": [
+    "FMA7204"
+   ],
+   "triangles": 4000,
+   "center": [
+    -0.0648,
+    1.0642,
+    -0.0252
+   ],
+   "size": [
+    0.0601,
+    0.1023,
+    0.0531
+   ]
+  },
+  {
+   "id": "stomach",
+   "label": "Stomach",
+   "layer": "organs",
+   "system": "digestive",
+   "bodyparts3d_ids": [
+    "FMA7148"
+   ],
+   "triangles": 3998,
+   "center": [
+    0.044,
+    1.1353,
+    0.0414
+   ],
+   "size": [
+    0.1417,
+    0.1203,
+    0.1152
+   ]
+  },
+  {
+   "id": "esophagus",
+   "label": "Esophagus",
+   "layer": "organs",
+   "system": "digestive",
+   "bodyparts3d_ids": [
+    "FMA7131"
+   ],
+   "triangles": 2642,
+   "center": [
+    0.0035,
+    1.3044,
+    -0.0106
+   ],
+   "size": [
+    0.0259,
+    0.2494,
+    0.045
+   ]
+  },
+  {
+   "id": "intestine_small",
+   "label": "Small intestine",
+   "layer": "organs",
+   "system": "digestive",
+   "bodyparts3d_ids": [
+    "FMA7206",
+    "FMA7207",
+    "FMA7208"
+   ],
+   "triangles": 4000,
+   "center": [
+    0.0037,
+    0.9767,
+    0.0462
+   ],
+   "size": [
+    0.2015,
+    0.2761,
+    0.0828
+   ]
+  },
+  {
+   "id": "intestine_large",
+   "label": "Large intestine",
+   "layer": "organs",
+   "system": "digestive",
+   "bodyparts3d_ids": [
+    "FMA14544",
+    "FMA76891",
+    "FMA76892",
+    "FMA76893"
+   ],
+   "triangles": 4000,
+   "center": [
+    0.0009,
+    0.9335,
+    0.0099
+   ],
+   "size": [
+    0.1992,
+    0.328,
+    0.1627
+   ]
+  },
+  {
+   "id": "spleen",
+   "label": "Spleen",
+   "layer": "organs",
+   "system": "immune",
+   "bodyparts3d_ids": [
+    "FMA7196"
+   ],
+   "triangles": 4000,
+   "center": [
+    0.0801,
+    1.1265,
+    0.0013
+   ],
+   "size": [
+    0.0739,
+    0.0837,
+    0.0993
+   ]
+  },
+  {
+   "id": "bladder",
+   "label": "Urinary bladder",
+   "layer": "organs",
+   "system": "renal",
+   "bodyparts3d_ids": [
+    "FMA15900"
+   ],
+   "triangles": 4000,
+   "center": [
+    -0.0,
+    0.8288,
+    0.0008
+   ],
+   "size": [
+    0.0726,
+    0.0516,
+    0.0828
+   ]
+  },
+  {
+   "id": "aorta",
+   "label": "Aorta",
+   "layer": "vessels",
+   "system": "cardiovascular",
+   "bodyparts3d_ids": [
+    "FMA3736",
+    "FMA3768",
+    "FMA3784"
+   ],
+   "triangles": 4000,
+   "center": [
+    0.0123,
+    1.1632,
+    -0.0027
+   ],
+   "size": [
+    0.0397,
+    0.3795,
+    0.0914
+   ]
+  },
+  {
+   "id": "vena_cava",
+   "label": "Superior & inferior vena cava",
+   "layer": "vessels",
+   "system": "cardiovascular",
+   "bodyparts3d_ids": [
+    "FMA10951",
+    "FMA4720"
+   ],
+   "triangles": 4000,
+   "center": [
+    -0.0144,
+    1.1541,
+    0.0219
+   ],
+   "size": [
+    0.0237,
+    0.3592,
+    0.03
+   ]
+  },
+  {
+   "id": "arteries",
+   "label": "Arteries (neck, trunk, lungs)",
+   "layer": "vessels",
+   "system": "cardiovascular",
+   "bodyparts3d_ids": [
+    "FMA3932",
+    "FMA3941",
+    "FMA4058",
+    "FMA3953",
+    "FMA4694",
+    "FMA50737",
+    "FMA14749",
+    "FMA14750",
+    "FMA14752",
+    "FMA14753",
+    "FMA14765",
+    "FMA14766",
+    "FMA18806",
+    "FMA18807",
+    "FMA18809",
+    "FMA18810",
+    "FMA66326",
+    "FMA14768",
+    "FMA14771",
+    "FMA14773"
+   ],
+   "triangles": 9000,
+   "center": [
+    -0.0001,
+    1.1192,
+    0.0069
+   ],
+   "size": [
+    0.2472,
+    0.5587,
+    0.1612
+   ]
+  },
+  {
+   "id": "veins",
+   "label": "Veins (neck, trunk, lungs)",
+   "layer": "vessels",
+   "system": "cardiovascular",
+   "bodyparts3d_ids": [
+    "FMA4751",
+    "FMA4761",
+    "FMA4754",
+    "FMA4762",
+    "FMA4755",
+    "FMA4763",
+    "FMA14335",
+    "FMA14336",
+    "FMA21387",
+    "FMA21388",
+    "FMA18885",
+    "FMA18886",
+    "FMA18887",
+    "FMA18888",
+    "FMA14332",
+    "FMA14331",
+    "FMA66643"
+   ],
+   "triangles": 6998,
+   "center": [
+    0.0007,
+    1.1233,
+    0.0003
+   ],
+   "size": [
+    0.2468,
+    0.5666,
+    0.1486
+   ]
+  },
+  {
+   "id": "skull",
+   "label": "Skull",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA52734",
+    "FMA52735",
+    "FMA52736",
+    "FMA52738",
+    "FMA52739",
+    "FMA52740",
+    "FMA52748",
+    "FMA52749",
+    "FMA52788",
+    "FMA52789",
+    "FMA52892",
+    "FMA52893",
+    "FMA53645",
+    "FMA53646",
+    "FMA53647",
+    "FMA53648",
+    "FMA53649",
+    "FMA53650",
+    "FMA53655",
+    "FMA53656",
+    "FMA9710"
+   ],
+   "triangles": 14000,
+   "center": [
+    -0.0,
+    1.548,
+    -0.0001
+   ],
+   "size": [
+    0.1445,
+    0.2073,
+    0.1974
+   ]
+  },
+  {
+   "id": "spine",
+   "label": "Vertebral column (spine)",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA10014",
+    "FMA10037",
+    "FMA10059",
+    "FMA10081",
+    "FMA10458",
+    "FMA12521",
+    "FMA12522",
+    "FMA12523",
+    "FMA12524",
+    "FMA12525",
+    "FMA13072",
+    "FMA13073",
+    "FMA13074",
+    "FMA13075",
+    "FMA13076",
+    "FMA13495",
+    "FMA13500",
+    "FMA13501",
+    "FMA13502",
+    "FMA13503",
+    "FMA13504",
+    "FMA13505",
+    "FMA13506",
+    "FMA13507",
+    "FMA13508",
+    "FMA13509",
+    "FMA13896",
+    "FMA13897",
+    "FMA13898",
+    "FMA13899",
+    "FMA13900",
+    "FMA16033",
+    "FMA16034",
+    "FMA16035",
+    "FMA16036",
+    "FMA16037",
+    "FMA16202",
+    "FMA25058",
+    "FMA9165",
+    "FMA9187",
+    "FMA9209",
+    "FMA9248",
+    "FMA9922",
+    "FMA9945",
+    "FMA9968",
+    "FMA9991"
+   ],
+   "triangles": 18000,
+   "center": [
+    0.0016,
+    1.1393,
+    -0.0381
+   ],
+   "size": [
+    0.1225,
+    0.6707,
+    0.1165
+   ]
+  },
+  {
+   "id": "ribcage",
+   "label": "Rib cage & sternum",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "BP24",
+    "BP28",
+    "FMA7486",
+    "FMA7487",
+    "FMA7488",
+    "FMA7857",
+    "FMA7875",
+    "FMA7882",
+    "FMA7886",
+    "FMA7909",
+    "FMA7913",
+    "FMA7957",
+    "FMA7976",
+    "FMA7987",
+    "FMA8005",
+    "FMA8012",
+    "FMA8031",
+    "FMA8039",
+    "FMA8058",
+    "FMA8066",
+    "FMA8070",
+    "FMA8093",
+    "FMA8112",
+    "FMA8148",
+    "FMA8167",
+    "FMA8175",
+    "FMA8194",
+    "FMA8202",
+    "FMA8221",
+    "FMA8229",
+    "FMA8248",
+    "FMA8256",
+    "FMA8275",
+    "FMA8283",
+    "FMA8310",
+    "FMA8364",
+    "FMA8391",
+    "FMA8445",
+    "FMA8472",
+    "FMA8531",
+    "FMA8532",
+    "FMA8533",
+    "FMA8534"
+   ],
+   "triangles": 12000,
+   "center": [
+    -0.0006,
+    1.2122,
+    0.0091
+   ],
+   "size": [
+    0.2736,
+    0.378,
+    0.2037
+   ]
+  },
+  {
+   "id": "pelvis",
+   "label": "Pelvis (hip bones)",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA16586",
+    "FMA16587"
+   ],
+   "triangles": 6000,
+   "center": [
+    0.001,
+    0.8767,
+    -0.0135
+   ],
+   "size": [
+    0.2631,
+    0.2084,
+    0.1385
+   ]
+  },
+  {
+   "id": "femur_left",
+   "label": "Left femur",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA24475"
+   ],
+   "triangles": 4998,
+   "center": [
+    0.0883,
+    0.6365,
+    -0.0183
+   ],
+   "size": [
+    0.1113,
+    0.4403,
+    0.0756
+   ]
+  },
+  {
+   "id": "femur_right",
+   "label": "Right femur",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA24474"
+   ],
+   "triangles": 5000,
+   "center": [
+    -0.0884,
+    0.6365,
+    -0.0183
+   ],
+   "size": [
+    0.1113,
+    0.4402,
+    0.0756
+   ]
+  },
+  {
+   "id": "tibia_left",
+   "label": "Left tibia & fibula",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA24478",
+    "FMA24481"
+   ],
+   "triangles": 5000,
+   "center": [
+    0.0821,
+    0.2367,
+    -0.0266
+   ],
+   "size": [
+    0.0876,
+    0.3658,
+    0.0659
+   ]
+  },
+  {
+   "id": "tibia_right",
+   "label": "Right tibia & fibula",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA24477",
+    "FMA24480"
+   ],
+   "triangles": 4998,
+   "center": [
+    -0.0821,
+    0.2368,
+    -0.0266
+   ],
+   "size": [
+    0.0876,
+    0.3658,
+    0.066
+   ]
+  },
+  {
+   "id": "arm_bones",
+   "label": "Arm bones (humerus, radius, ulna)",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA23130",
+    "FMA23131",
+    "FMA23464",
+    "FMA23465",
+    "FMA23467",
+    "FMA23468"
+   ],
+   "triangles": 5000,
+   "center": [
+    -0.0001,
+    1.0946,
+    -0.0143
+   ],
+   "size": [
+    0.5593,
+    0.5319,
+    0.0837
+   ]
+  },
+  {
+   "id": "shoulder_girdle",
+   "label": "Shoulder girdle (scapula, clavicle)",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA13322",
+    "FMA13323",
+    "FMA13395",
+    "FMA13396"
+   ],
+   "triangles": 5000,
+   "center": [
+    0.0,
+    1.2978,
+    -0.0289
+   ],
+   "size": [
+    0.336,
+    0.1657,
+    0.1581
+   ]
+  },
+  {
+   "id": "skeleton_other",
+   "label": "Hands, feet & other bones",
+   "layer": "skeleton",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA12513",
+    "FMA12519",
+    "FMA12520",
+    "FMA230986",
+    "FMA230988",
+    "FMA23707",
+    "FMA23708",
+    "FMA23725",
+    "FMA23938",
+    "FMA23940",
+    "FMA23942",
+    "FMA23944",
+    "FMA23951",
+    "FMA23953",
+    "FMA23955",
+    "FMA23957",
+    "FMA23959",
+    "FMA24435",
+    "FMA24436",
+    "FMA24437",
+    "FMA24438",
+    "FMA24439",
+    "FMA24440",
+    "FMA24441",
+    "FMA24442",
+    "FMA24443",
+    "FMA24444",
+    "FMA24445",
+    "FMA24446",
+    "FMA24447",
+    "FMA24448",
+    "FMA24449",
+    "FMA24450",
+    "FMA24451",
+    "FMA24452",
+    "FMA24453",
+    "FMA24454",
+    "FMA24455",
+    "FMA24456",
+    "FMA24457",
+    "FMA24458",
+    "FMA24459",
+    "FMA24460",
+    "FMA24461",
+    "FMA24462",
+    "FMA24463",
+    "FMA24464",
+    "FMA24465",
+    "FMA24466",
+    "FMA24467",
+    "FMA24468",
+    "FMA24469",
+    "FMA24470",
+    "FMA24471",
+    "FMA24472",
+    "FMA24473",
+    "FMA24482",
+    "FMA24483",
+    "FMA24486",
+    "FMA24487",
+    "FMA24497",
+    "FMA24498",
+    "FMA24500",
+    "FMA24501",
+    "FMA24507",
+    "FMA24508",
+    "FMA24509",
+    "FMA24510",
+    "FMA24511",
+    "FMA24512",
+    "FMA24513",
+    "FMA24514",
+    "FMA24515",
+    "FMA24516",
+    "FMA24521",
+    "FMA24522",
+    "FMA24523",
+    "FMA24524",
+    "FMA24525",
+    "FMA24526",
+    "FMA24528",
+    "FMA24529",
+    "FMA32634",
+    "FMA32635",
+    "FMA32636",
+    "FMA32637",
+    "FMA32638",
+    "FMA32639",
+    "FMA32640",
+    "FMA32641",
+    "FMA32642",
+    "FMA32643",
+    "FMA32644",
+    "FMA32645",
+    "FMA32646",
+    "FMA32647",
+    "FMA32650",
+    "FMA32651",
+    "FMA32652",
+    "FMA32653",
+    "FMA32654",
+    "FMA32655",
+    "FMA32656",
+    "FMA32657",
+    "FMA32658",
+    "FMA32659",
+    "FMA35192",
+    "FMA35193",
+    "FMA43253",
+    "FMA43254",
+    "FMA44249",
+    "FMA44250",
+    "FMA45097",
+    "FMA45098",
+    "FMA54737",
+    "FMA54738",
+    "FMA59763",
+    "FMA59764",
+    "FMA65470",
+    "FMA66791",
+    "FMA71908",
+    "FMA71915",
+    "FMA71916"
+   ],
+   "triangles": 30000,
+   "center": [
+    -0.0001,
+    0.7828,
+    0.0234
+   ],
+   "size": [
+    0.6479,
+    1.5469,
+    0.2217
+   ]
+  },
+  {
+   "id": "soleus_left",
+   "label": "Left soleus (calf)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22559"
+   ],
+   "triangles": 3498,
+   "center": [
+    0.0834,
+    0.2632,
+    -0.0484
+   ],
+   "size": [
+    0.0823,
+    0.267,
+    0.0534
+   ]
+  },
+  {
+   "id": "soleus_right",
+   "label": "Right soleus (calf)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22558"
+   ],
+   "triangles": 3500,
+   "center": [
+    -0.0834,
+    0.2631,
+    -0.0484
+   ],
+   "size": [
+    0.0825,
+    0.2669,
+    0.0534
+   ]
+  },
+  {
+   "id": "gastrocnemius_left",
+   "label": "Left gastrocnemius (calf)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA45958",
+    "FMA45961"
+   ],
+   "triangles": 3500,
+   "center": [
+    0.082,
+    0.345,
+    -0.0591
+   ],
+   "size": [
+    0.0968,
+    0.2899,
+    0.0856
+   ]
+  },
+  {
+   "id": "gastrocnemius_right",
+   "label": "Right gastrocnemius (calf)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA45957",
+    "FMA45960"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.082,
+    0.3452,
+    -0.059
+   ],
+   "size": [
+    0.0965,
+    0.2904,
+    0.085
+   ]
+  },
+  {
+   "id": "quadriceps_left",
+   "label": "Left quadriceps",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA38929",
+    "FMA38931",
+    "FMA38933",
+    "FMA38935"
+   ],
+   "triangles": 3498,
+   "center": [
+    0.0929,
+    0.623,
+    0.0134
+   ],
+   "size": [
+    0.1208,
+    0.5284,
+    0.0924
+   ]
+  },
+  {
+   "id": "quadriceps_right",
+   "label": "Right quadriceps",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA38928",
+    "FMA38930",
+    "FMA38932",
+    "FMA38934"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0936,
+    0.6231,
+    0.0134
+   ],
+   "size": [
+    0.1208,
+    0.5279,
+    0.0927
+   ]
+  },
+  {
+   "id": "hamstrings_left",
+   "label": "Left hamstrings",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22359",
+    "FMA22449",
+    "FMA45889",
+    "FMA45892"
+   ],
+   "triangles": 3500,
+   "center": [
+    0.069,
+    0.5677,
+    -0.0424
+   ],
+   "size": [
+    0.1091,
+    0.4528,
+    0.0604
+   ]
+  },
+  {
+   "id": "hamstrings_right",
+   "label": "Right hamstrings",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22358",
+    "FMA22448",
+    "FMA45888",
+    "FMA45891"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0693,
+    0.568,
+    -0.0423
+   ],
+   "size": [
+    0.1101,
+    0.4522,
+    0.0604
+   ]
+  },
+  {
+   "id": "tibialis_anterior",
+   "label": "Tibialis anterior (shin)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22544",
+    "FMA22545"
+   ],
+   "triangles": 3498,
+   "center": [
+    0.0,
+    0.2194,
+    0.0032
+   ],
+   "size": [
+    0.2272,
+    0.3562,
+    0.0712
+   ]
+  },
+  {
+   "id": "gluteus",
+   "label": "Gluteus maximus",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22328",
+    "FMA22329"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0001,
+    0.8177,
+    -0.0602
+   ],
+   "size": [
+    0.2831,
+    0.2613,
+    0.0942
+   ]
+  },
+  {
+   "id": "erector_spinae",
+   "label": "Erector spinae (back)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22740",
+    "FMA22741",
+    "FMA22742",
+    "FMA22743",
+    "FMA22744",
+    "FMA22745",
+    "FMA22751",
+    "FMA22753",
+    "FMA22754",
+    "FMA22756",
+    "FMA22757",
+    "FMA22758",
+    "FMA22779",
+    "FMA22780",
+    "FMA22781",
+    "FMA22782",
+    "FMA22872",
+    "FMA22873",
+    "FMA22874",
+    "FMA22875",
+    "FMA22876",
+    "FMA22877"
+   ],
+   "triangles": 6566,
+   "center": [
+    -0.0002,
+    1.1899,
+    -0.0534
+   ],
+   "size": [
+    0.2007,
+    0.6663,
+    0.089
+   ]
+  },
+  {
+   "id": "pectoralis",
+   "label": "Pectoralis major (chest)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA34690",
+    "FMA34691",
+    "FMA45874",
+    "FMA45875",
+    "FMA79979",
+    "FMA79980"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0,
+    1.2506,
+    0.0546
+   ],
+   "size": [
+    0.387,
+    0.2299,
+    0.1384
+   ]
+  },
+  {
+   "id": "deltoid",
+   "label": "Deltoid (shoulder)",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA34680",
+    "FMA34681",
+    "FMA34682",
+    "FMA34683",
+    "FMA34684",
+    "FMA34685"
+   ],
+   "triangles": 3498,
+   "center": [
+    0.0001,
+    1.295,
+    -0.0387
+   ],
+   "size": [
+    0.4549,
+    0.1675,
+    0.1198
+   ]
+  },
+  {
+   "id": "arm_muscles",
+   "label": "Biceps & triceps",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA37684",
+    "FMA37685",
+    "FMA37686",
+    "FMA37687",
+    "FMA37695",
+    "FMA37696",
+    "FMA37697",
+    "FMA37698",
+    "FMA37699",
+    "FMA37700"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0001,
+    1.191,
+    -0.0358
+   ],
+   "size": [
+    0.4596,
+    0.3452,
+    0.091
+   ]
+  },
+  {
+   "id": "abdominals",
+   "label": "Rectus abdominis",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA13377",
+    "FMA13378"
+   ],
+   "triangles": 3498,
+   "center": [
+    -0.0002,
+    1.0213,
+    0.0812
+   ],
+   "size": [
+    0.1584,
+    0.3952,
+    0.0725
+   ]
+  },
+  {
+   "id": "trapezius",
+   "label": "Trapezius",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA33581",
+    "FMA33583",
+    "FMA33584",
+    "FMA33585",
+    "FMA33586",
+    "FMA33587"
+   ],
+   "triangles": 3500,
+   "center": [
+    0.0004,
+    1.3048,
+    -0.0612
+   ],
+   "size": [
+    0.3235,
+    0.4401,
+    0.1257
+   ]
+  },
+  {
+   "id": "latissimus",
+   "label": "Latissimus dorsi",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA13358",
+    "FMA13359"
+   ],
+   "triangles": 3574,
+   "center": [
+    0.0003,
+    1.1009,
+    -0.065
+   ],
+   "size": [
+    0.3586,
+    0.3988,
+    0.0997
+   ]
+  },
+  {
+   "id": "thigh_other",
+   "label": "Sartorius & adductors",
+   "layer": "muscles",
+   "system": "musculoskeletal",
+   "bodyparts3d_ids": [
+    "FMA22354",
+    "FMA22355",
+    "FMA22452",
+    "FMA22454",
+    "FMA22456",
+    "FMA22457",
+    "FMA22459",
+    "FMA22460",
+    "FMA43886",
+    "FMA43887",
+    "FMA46018",
+    "FMA46019",
+    "FMA46020",
+    "FMA46021",
+    "FMA46121",
+    "FMA46122",
+    "FMA46123",
+    "FMA46124"
+   ],
+   "triangles": 3498,
+   "center": [
+    0.0002,
+    0.4654,
+    0.0197
+   ],
+   "size": [
+    0.5996,
+    0.9015,
+    0.1053
+   ]
+  }
+ ]
+}

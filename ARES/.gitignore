@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+# generated (re-create with scripts/generate_data.py; ~100 MB)
+data/generated/
+data/ares_local.db
+data/cache/*.json
+!data/cache/.gitkeep
+# large external downloads (re-create with scripts/fetch_data.py)
+data/external/mitdb/*
+!data/external/mitdb/100.*
+data/external/wfdb_samples/*
+!data/external/wfdb_samples/drive02.*
+.DS_Store
+web3d/node_modules/
+_stl_cache/
+.ares_installed
+# desktop app: runtime data and build output
+data/ares_history.db
+data/*.db-wal
+data/*.db-shm
+data/ares.lock
+data/startup_status.json
+data/backups/
+data/logs/
+data/webview/
+build/
+dist/
+desktop/redist/*.exe
+desktop/offline_test_report.*
+acceptance_screenshots/
