@@ -1,0 +1,3 @@
+2026-11-15 12:02:43,916 INFO ares.backend: ARES backend starting on 127.0.0.1:8765 (parent pid 35164, data C:\Users\Himanshu\Downloads\ARES-NASA-SpaceApps-2026\ARES\build\selftest-data)
+2026-11-15 12:03:00,935 INFO matplotlib.font_manager: generated new fontManager
+2026-11-15 12:03:02,143 INFO ares.backend: ARES backend stopped cleanly

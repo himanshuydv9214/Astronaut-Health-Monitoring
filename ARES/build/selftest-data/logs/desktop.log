@@ -1,0 +1,3 @@
+2026-11-15 12:02:36,647 INFO starting backend: C:\Users\Himanshu\Downloads\ARES-NASA-SpaceApps-2026\ARES\dist\ARES\ARES.exe --backend --port 8765 --parent-pid 35164 (port 8765)
+2026-11-15 12:03:01,992 INFO backend saved its data and is stopping
+2026-11-15 12:03:02,878 INFO backend stopped (exit code 0)

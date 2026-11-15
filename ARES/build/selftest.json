@@ -1,0 +1,28 @@
+{
+ "version": "0.5.0",
+ "data_dir": "C:\\Users\\Himanshu\\Downloads\\ARES-NASA-SpaceApps-2026\\ARES\\build\\selftest-data",
+ "frozen": true,
+ "single_instance_lock": true,
+ "port": 8765,
+ "startup_s": 22.3,
+ "ready": true,
+ "checks": {
+  "database": true,
+  "history": true,
+  "test_records": true,
+  "models": true,
+  "knowledge_base": true,
+  "anatomy": true,
+  "interface": true,
+  "clock": true
+ },
+ "/": 200,
+ "/anatomy-assets/ares_body.glb": 200,
+ "/vendor/plotly.min.js": 200,
+ "/api/anomalies": 200,
+ "/api/medical-guidance?astronaut=AST-1": 200,
+ "/api/simulation": 200,
+ "/api/history/sessions": 200,
+ "backend_exit_code": 0,
+ "error": null
+}
